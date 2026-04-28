@@ -1,5 +1,5 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-04-28 10:45 UTC
+Senast kontrollerad: 2026-04-28 11:00 UTC
 
 **9/32 live på Vercel**
 
@@ -22,11 +22,11 @@ Senast kontrollerad: 2026-04-28 10:45 UTC
   - magento-ehandel.se (ingen DNS)
   - b2behandel.se (ingen DNS)
   - centrumhandel.se (ingen DNS)
-  - aiutveckling.com (212.123.41.108)
-  - aiutvecklare.com (212.123.41.108)
-  - wunderwerk-b2b.com (212.123.41.108)
-  - orionheadless.com (212.123.41.108)
-  - b2b-today.com (212.123.41.108)
+  - aiutveckling.com (212.123.41.108 — pekar ej på Vercel)
+  - aiutvecklare.com (212.123.41.108 — pekar ej på Vercel)
+  - wunderwerk-b2b.com (212.123.41.108 — pekar ej på Vercel)
+  - orionheadless.com (212.123.41.108 — pekar ej på Vercel)
+  - b2b-today.com (212.123.41.108 — pekar ej på Vercel)
 
 ## Live (9 st):
  shopifysverige.com xn--shopifybyrer-2cb.se shopify360.se magentopwa.se aiengineer.se adobe-commerce.se shopifyb2b.se shopify-sverige.se e-handelsystem.se
