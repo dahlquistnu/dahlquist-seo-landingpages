@@ -1,5 +1,5 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-05-06 10:08 UTC
+Senast kontrollerad: 2026-05-06 11:08 UTC
 
 **9/32 live på Vercel**
 
@@ -29,12 +29,4 @@ Senast kontrollerad: 2026-05-06 10:08 UTC
   - b2b-today.com (212.123.41.108)
 
 ## Live (9 st):
-  - shopifysverige.com
-  - xn--shopifybyrer-2cb.se
-  - shopify360.se
-  - magentopwa.se
-  - aiengineer.se
-  - adobe-commerce.se
-  - shopifyb2b.se
-  - shopify-sverige.se
-  - e-handelsystem.se
+ shopifysverige.com xn--shopifybyrer-2cb.se shopify360.se magentopwa.se aiengineer.se adobe-commerce.se shopifyb2b.se shopify-sverige.se e-handelsystem.se
