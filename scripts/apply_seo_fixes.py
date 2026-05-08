@@ -21,6 +21,7 @@ import os
 import re
 import json
 import shutil
+from datetime import date
 from pathlib import Path
 
 PAGES_DIR = Path("/Users/niklasdahlquist/GIT/dahlquist-seo-landingpages/pages")
@@ -314,6 +315,24 @@ def update_html(html: str, meta: dict) -> str:
     return html
 
 
+def update_sitemap_lastmod(page_dir: Path) -> bool:
+    """Bump <lastmod> in sitemap.xml to today's date if it's older. Idempotent."""
+    sitemap_path = page_dir / "sitemap.xml"
+    if not sitemap_path.exists():
+        return False
+    today = date.today().isoformat()
+    content = sitemap_path.read_text(encoding="utf-8")
+    new_content = re.sub(
+        r"<lastmod>\d{4}-\d{2}-\d{2}</lastmod>",
+        f"<lastmod>{today}</lastmod>",
+        content,
+    )
+    if new_content != content:
+        sitemap_path.write_text(new_content, encoding="utf-8")
+        return True
+    return False
+
+
 def fix_page(page_dir: Path) -> dict:
     """Apply all fixes to one page directory. Returns summary."""
     index_path = page_dir / "index.html"
@@ -338,11 +357,15 @@ def fix_page(page_dir: Path) -> dict:
     if llms_changed:
         llms_path.write_text(new_llms, encoding="utf-8")
 
+    # Bump sitemap lastmod
+    sitemap_changed = update_sitemap_lastmod(page_dir)
+
     return {
         "dir": page_dir.name,
         "domain": meta["domain"],
         "html_changed": new_html != html,
         "llms_changed": llms_changed,
+        "sitemap_changed": sitemap_changed,
     }
 
 
