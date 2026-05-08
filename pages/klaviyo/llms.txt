@@ -1,0 +1,27 @@
+# Klaviyo Sverige
+
+> Klaviyo-specialist i Sverige. Dahlquist implementerar och optimerar Klaviyo för Shopify och Magento – e-postflöden, SMS, segmentering och automation för ökad e-handelsförsäljning.
+
+Sajt: https://klaviyo.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
+
+## Specialitet
+
+- Klaviyo-flöden (welcome, abandoned cart, post-purchase)
+- Custom segments med profile properties och events
+- Klaviyo + Shopify / Magento-integration
+- API-utveckling för custom events och attribut
+- A/B-testning och deliverability-optimering
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
+
+## Kontakt
+
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

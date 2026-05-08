@@ -1,0 +1,27 @@
+# Shopify Experter i Sverige
+
+> Anlita certifierade Shopify-experter med 10+ års erfarenhet. Dahlquist är Shopify Plus Partner och hjälper svenska företag att maximera sin Shopify-försäljning.
+
+Sajt: https://shopifyexperter.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
+
+## Specialitet
+
+- Shopify och Shopify Plus-utveckling
+- Theme-utveckling (Online Store 2.0, Liquid)
+- Custom Apps med Remix + GraphQL Admin API
+- Klaviyo-integration och flows
+- Migration från Magento, WooCommerce, Prestashop till Shopify
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
+
+## Kontakt
+
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

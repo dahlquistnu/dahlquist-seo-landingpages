@@ -1,0 +1,27 @@
+# Wunderwerk B2B
+
+> B2B e-handelslösningar med Shopify Plus och Adobe Commerce. Kundportaler, inköpssystem, ERP-integration och PunchOut. Certifierad B2B-specialist sedan 2016.
+
+Sajt: https://wunderwerk-b2b.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
+
+## Specialitet
+
+- Magento 2 / Adobe Commerce-utveckling
+- Hyva Theme-implementation
+- ERP-integrationer (Business Central, SAP, Visma, Fortnox)
+- Magento-migration (M1 → M2, eller från andra plattformar)
+- Adobe Commerce Cloud (ece-tools, Fastly CDN)
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
+
+## Kontakt
+
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

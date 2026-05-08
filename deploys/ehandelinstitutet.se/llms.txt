@@ -1,0 +1,27 @@
+# E-handelsinstitutet
+
+> Praktisk kunskap och rådgivning om e-handel för svenska företag. Plattformsval, strategi, integrationer och best practices. Byggd på 150+ levererade projekt sedan 2016.
+
+Sajt: https://ehandelinstitutet.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
+
+## Specialitet
+
+- E-handelsstrategi och plattformsval
+- Magento, Shopify, BigCommerce-utveckling
+- ERP-integration och affärslogik
+- Konvertering och sökmotoroptimering
+- Klaviyo, GA4 och tracking-setup
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
+
+## Kontakt
+
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

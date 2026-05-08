@@ -1,0 +1,27 @@
+# PIM-system Sverige
+
+> PIM-system för svenska e-handlare. Akeneo, Pimcore och Crystallize – vi implementerar och integrerar PIM mot Shopify och Adobe Commerce. Expert sedan 2016.
+
+Sajt: https://pimsystem.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
+
+## Specialitet
+
+- Akeneo PIM-implementation
+- Pimcore PIM-utveckling
+- PIM → e-handelsplattform-synk (Magento, Shopify)
+- Datamodellering, attributstrukturer och kategorimapping
+- Custom connectors mot ERP och DAM
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
+
+## Kontakt
+
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt
