@@ -1,9 +1,9 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-05-08 12:03 UTC
+Senast kontrollerad: 2026-05-08 12:08 UTC
 
-**9/32 live på Vercel**
+**10/32 live på Vercel**
 
-## Väntar (23 st):
+## Väntar (22 st):
   - xn--shopifybyr-b6a.se (ingen DNS)
   - x-konsult.se (ingen DNS)
   - starta-ehandel.se (ingen DNS)
@@ -13,7 +13,6 @@ Senast kontrollerad: 2026-05-08 12:03 UTC
   - pimsystem.se (ingen DNS)
   - magentocommerce.se (ingen DNS)
   - inline-ehandel.se (ingen DNS)
-  - digitalhandel.nu (ingen DNS)
   - ai-utveklare.se (ingen DNS)
   - ecomeagency.se (ingen DNS)
   - magento-webshop.se (ingen DNS)
@@ -28,5 +27,5 @@ Senast kontrollerad: 2026-05-08 12:03 UTC
   - orionheadless.com (212.123.41.108)
   - b2b-today.com (212.123.41.108)
 
-## Live (9 st):
- shopifysverige.com xn--shopifybyrer-2cb.se shopify360.se magentopwa.se aiengineer.se adobe-commerce.se shopifyb2b.se shopify-sverige.se e-handelsystem.se
+## Live (10 st):
+ shopifysverige.com xn--shopifybyrer-2cb.se shopify360.se magentopwa.se aiengineer.se adobe-commerce.se shopifyb2b.se shopify-sverige.se digitalhandel.nu e-handelsystem.se
