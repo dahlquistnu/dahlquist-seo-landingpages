@@ -1,23 +1,27 @@
-# Inline E-handel — E-handelslösningar för svenska företag
+# E-handel Online
 
-> Professionella e-handelslösningar på Shopify Plus och Magento. Dahlquist E-handelskonsulter AB.
+> Professionella e-handelslösningar för svenska företag. Dahlquist bygger, optimerar och skalar e-handel på Shopify Plus och Magento – plattformsstrategi, ERP-integration och konverteringsoptimering sedan 2016.
 
-Den här sajten handlar om e-handelslösningar för svenska företag — från plattformsval och lansering till SEO, konverteringsoptimering och integrationer mot affärssystem.
+Sajt: https://inline-ehandel.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
 
-## Om oss
+## Specialitet
 
-Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi är certifierade Shopify Plus Partners och Magento-specialister med 150+ genomförda e-handelsprojekt för svenska och internationella kunder. Vi har hjälpt varumärken som STIHL, SONAX och Arrak Outdoor.
+- Magento 2 / Adobe Commerce-utveckling
+- Hyva Theme-implementation
+- ERP-integrationer (Business Central, SAP, Visma, Fortnox)
+- Magento-migration (M1 → M2, eller från andra plattformar)
+- Adobe Commerce Cloud (ece-tools, Fastly CDN)
 
-## Ämnesområden
+## Om Dahlquist
 
-- Shopify Plus och Magento 2 / Adobe Commerce
-- Headless commerce (separerad front-end)
-- ERP- och affärssystemsintegration (Business Central, SAP, Fortnox, Visma, Jeeves)
-- B2B e-handel (kundportaler, kundspecifik prissättning)
-- SEO och organisk tillväxt för e-handel
-- Konverteringsoptimering (CRO)
-- AI-driven personalisering och produktrekommendationer
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
 
 ## Kontakt
 
-För e-handelslösningar: https://dahlquist.se
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

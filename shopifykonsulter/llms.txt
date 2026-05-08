@@ -1,15 +1,27 @@
-# shopifykonsulter – Dahlquist E-handelskonsulter
+# Shopify Konsulter Sverige
 
-> En sajt av Dahlquist E-handelskonsulter AB – Shopify Plus Partner och Adobe Commerce-specialister sedan 2016.
+> Anlita erfarna Shopify-konsulter för strategi, implementation och optimering. Dahlquist är Shopify Plus Partner med 10+ års erfarenhet av e-handelskonsulting.
 
-## Tjänster
+Sajt: https://shopifykonsulter.se/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
 
-- Shopify och Shopify Plus
-- Magento / Adobe Commerce
-- ERP-integrationer
-- Klaviyo, PunchOut, B2B
+## Specialitet
+
+- Shopify och Shopify Plus-utveckling
+- Theme-utveckling (Online Store 2.0, Liquid)
+- Custom Apps med Remix + GraphQL Admin API
+- Klaviyo-integration och flows
+- Migration från Magento, WooCommerce, Prestashop till Shopify
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
 
 ## Kontakt
 
-Huvudsajt: https://dahlquist.se
-Kontakt: https://dahlquist.se/kontakt
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

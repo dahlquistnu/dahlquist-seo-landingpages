@@ -1,15 +1,27 @@
-# punchout – Dahlquist E-handelskonsulter
+# PunchOut Lösningar Sverige
 
-> En sajt av Dahlquist E-handelskonsulter AB – Shopify Plus Partner och Adobe Commerce-specialister sedan 2016.
+> PunchOut-lösningar för B2B e-handel. Dahlquist implementerar cXML och OCI PunchOut mot Magento och Shopify Plus för företag som handlar via inköpssystem som Ariba och Coupa.
 
-## Tjänster
+Sajt: https://punchout.nu/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
 
-- Shopify och Shopify Plus
-- Magento / Adobe Commerce
-- ERP-integrationer
-- Klaviyo, PunchOut, B2B
+## Specialitet
+
+- PunchOut-integration mot SAP Ariba, Coupa, Ivalua
+- B2B-handel på Magento och Shopify
+- OCI och cXML-protokoll
+- Kontraktsprislistor och kundspecifika kataloger
+- EDI-integration
+
+## Om Dahlquist
+
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
 
 ## Kontakt
 
-Huvudsajt: https://dahlquist.se
-Kontakt: https://dahlquist.se/kontakt
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt

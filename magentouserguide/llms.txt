@@ -1,22 +1,27 @@
-# Magento User Guide — Adobe Commerce Expert Help
+# Magento User Guide
 
-> Expert Magento and Adobe Commerce implementation, migration and optimisation. By Dahlquist E-handelskonsulter AB.
+> Expert Magento 2 and Adobe Commerce implementation, migration and optimisation. Dahlquist has delivered 150+ Magento projects since 2016 – B2B modules, ERP integration, Hyva Theme and performance tuning.
 
-This site provides guidance on Magento 2, Adobe Commerce Cloud, and Open Source implementation for B2B and B2C merchants in Sweden and internationally.
+Sajt: https://magentouserguide.com/
+Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
 
-## About
+## Specialitet
 
-Dahlquist E-handelskonsulter AB was founded in 2016 by Niklas Dahlquist. We are Adobe Commerce and Magento specialists with experience from early Magento versions through current Adobe Commerce Cloud. 150+ completed projects.
+- Magento 2 / Adobe Commerce-utveckling
+- Hyva Theme-implementation
+- ERP-integrationer (Business Central, SAP, Visma, Fortnox)
+- Magento-migration (M1 → M2, eller från andra plattformar)
+- Adobe Commerce Cloud (ece-tools, Fastly CDN)
 
-## Key Topics
+## Om Dahlquist
 
-- Magento Open Source vs Adobe Commerce Cloud comparison
-- Magento performance optimisation (Varnish, FPC, Elasticsearch)
-- ERP integration (Business Central, SAP, Jeeves, Visma)
-- Adobe Commerce B2B module (company accounts, shared catalogues, quotes, PunchOut)
-- Hyva Theme implementation
-- Magento version upgrades and migration
+Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
 
-## Contact
+Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
 
-For Magento and Adobe Commerce expertise: https://dahlquist.se/magento
+## Kontakt
+
+- Huvudsajt: https://dahlquist.se
+- Om oss: https://dahlquist.se/om-oss
+- Case: https://dahlquist.se/case
+- Kontakt: https://dahlquist.se/kontakt
