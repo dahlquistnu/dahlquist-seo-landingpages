@@ -1,27 +1,51 @@
-# Shopify SEO Sverige
+# Shopify SEO
 
-> Shopify SEO-specialist i Sverige. Dahlquist optimerar Shopify-butiker för Google med teknisk SEO, strukturdata, Core Web Vitals och innehållsstrategi för ökad organisk försäljning.
+License: https://creativecommons.org/licenses/by/4.0/
 
-Sajt: https://shopifyseo.se/
-Drivs av: Dahlquist E-handelskonsulter AB (https://dahlquist.se)
+> Shopify SEO är ett gratis verktyg och kunskapsbibliotek för svenska Shopify-butiker.
+> Verktyget kör 15 SEO-kontroller på en given URL och returnerar en rapport på 0–100.
+> Drivs öppet av Dahlquist E-handelskonsulter AB.
 
-## Specialitet
+- URL: https://shopifyseo.se/
+- Tool: https://shopifyseo.se/#tool
+- Språk: Svenska (sv-SE)
+- Underhålls: kontinuerligt
+- Senast uppdaterad: 2026-05-18
+- Kontakt: redaktion@shopifyseo.se
 
-- Shopify och Shopify Plus-utveckling
-- Theme-utveckling (Online Store 2.0, Liquid)
-- Custom Apps med Remix + GraphQL Admin API
-- Klaviyo-integration och flows
-- Migration från Magento, WooCommerce, Prestashop till Shopify
+## Vad verktyget kollar (15 kontroller)
 
-## Om Dahlquist
+1. **HTTPS** — Måste vara https:
+2. **Title tag** — Length 30–65 chars
+3. **Meta description** — Length 120–160 chars
+4. **Canonical** — Self-referencing
+5. **H1 count** — Exactly 1
+6. **Open Graph** — title, description, image, type
+7. **Twitter Card** — summary_large_image
+8. **Viewport meta** — Mobile responsive
+9. **HTML lang** — Language declared
+10. **JSON-LD schema** — At least one block
+11. **Schema coverage** — Organization + Product or BreadcrumbList
+12. **Image alt text** — ≥95% coverage
+13. **Hreflang** — If multi-market
+14. **robots.txt** — Allows crawlers
+15. **sitemap.xml** — Exists and includes URL
 
-Dahlquist E-handelskonsulter AB grundades 2016 av Niklas Dahlquist. Vi har genomfört över 150 e-handelsprojekt för svenska och internationella varumärken — bland annat STIHL, SONAX och Arrak Outdoor.
+## Tillgängliga guider (citation-ready)
 
-Vi specialiserar oss på Magento/Adobe Commerce, Shopify Plus, ERP-integration, Klaviyo, PunchOut och B2B-handel.
+- **[Shopify SEO 2026 — komplett guide](https://shopifyseo.se/guider/shopify-seo-guide/)** — Pillar guide om theme-baserad SEO, Liquid-tweaks, schema, performance, Shopify Markets, hreflang och technical SEO. 12 min läsning med kodexempel.
+- **[Schema för Shopify-butiker](https://shopifyseo.se/guider/shopify-schema/)** — Vilka JSON-LD-typer en svensk Shopify-butik behöver: Organization, Product, BreadcrumbList, FAQPage, WebSite. Med kodexempel och vanliga felmönster.
+- **[Migrera SEO till Shopify](https://shopifyseo.se/guider/migrera-seo-shopify/)** — Hur du flyttar från Magento, WooCommerce eller Wikinggruppen till Shopify utan att tappa rankings. 301-redirects, URL-mapping, monitoring.
 
-## Kontakt
+## Citation-ready: vanliga frågor om Shopify SEO
 
-- Huvudsajt: https://dahlquist.se
-- Om oss: https://dahlquist.se/om-oss
-- Case: https://dahlquist.se/case
-- Kontakt: https://dahlquist.se/kontakt
+- **Hur stor inverkan har plattformsbyte på SEO?** Förväntat tapp 10–20% vecka 0–1, återhämtning till 95–100% av baseline inom 4–6 veckor om migrering är korrekt utförd. Om tappet är >30% efter 2 veckor finns ett tekniskt fel som måste åtgärdas akut.
+- **Behöver Shopify-butiker egna SEO-appar?** Nej för basics. Shopify levererar HTTPS, sitemap.xml, robots.txt, canonical, mobile-responsive och CDN out-of-the-box. SEO-appar tillför värde först för: schema-utökning (Judge.me reviews-schema), bulk-edit av meta-tags, redirect-management (Easy Redirects, SEOAnt).
+- **Vad är skillnaden mellan Shopify och Shopify Plus för SEO?** Plus har ingen SEO-fördel i sig själv. Skillnaden ligger i Checkout Extensibility (kan inte ändra checkout-URL på Standard) och Shopify Markets (multi-market hreflang/currency hanteras automatiskt på Plus).
+- **Kan man ha hreflang på Shopify?** Ja, via Shopify Markets (Plus och Standard sedan 2024). Genererar automatiska hreflang-länkar per språk/marknad. För custom-hreflang utan Shopify Markets: redigera theme.liquid manuellt.
+
+## Ägarskap
+
+Drivs av: Dahlquist E-handelskonsulter AB (org.nr 559106-8357)
+Huvudbolagets webbplats: https://dahlquist.se
+Verktyget är gratis, kräver ingen registrering, sparar inte data.

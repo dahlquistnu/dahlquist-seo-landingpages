@@ -1,223 +1,314 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopify SEO Sverige – Teknisk SEO och organisk tillväxt | Dahlquist</title>
-  <meta name="description" content="Shopify SEO-specialist i Sverige. Dahlquist optimerar Shopify-butiker för Google med teknisk SEO, strukturdata, Core Web Vitals och innehållsstrategi för ökad organisk försäljning." />
-  <link rel="canonical" href="https://shopifyseo.se/" />
-  <meta property="og:title" content="Shopify SEO Sverige – Dahlquist" />
-  <meta property="og:description" content="Shopify SEO-specialist. Teknisk SEO, strukturdata och Core Web Vitals-optimering för ökad organisk synlighet i Google." />
-  <meta property="og:type" content="article" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta property="og:image" content="https://dahlquist.se/images/og-dahlquist.jpg" />
-  <meta property="og:locale" content="sv_SE" />
-  <meta name="author" content="Dahlquist E-handelskonsulter AB" />
-  <script type="application/ld+json">
-  [
-    {"@context":"https://schema.org","@type":"WebPage","name":"Shopify SEO Sverige – Dahlquist","description":"Shopify SEO-specialist. Teknisk SEO, Core Web Vitals och strukturdata för svenska e-handlare.","url":"https://shopifyseo.se/","image":"https://dahlquist.se/images/og-dahlquist.jpg","datePublished":"2026-04-05","dateModified":"2026-04-05","inLanguage":"sv-SE","author":{"@type":"Person","name":"Niklas Dahlquist"},"publisher":{"@type":"Organization","name":"Dahlquist E-handelskonsulter AB","url":"https://dahlquist.se"}},
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hem","item":"https://shopifyseo.se/"},{"@type":"ListItem","position":2,"name":"Shopify SEO","item":"https://shopifyseo.se/"}]}
-  ]
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org","@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Vad är Shopify SEO?","acceptedAnswer":{"@type":"Answer","text":"Shopify SEO är optimering av Shopify-butiker för att ranka högre i Google. Det inkluderar teknisk SEO (kanoniska URL:er, sitemap, robots.txt), on-page SEO (titlar, meta-beskrivningar, rubriker), strukturdata (Product, BreadcrumbList), Core Web Vitals och innehållsstrategi för kategori- och produktsidor."}},
-      {"@type":"Question","name":"Vilka är de vanligaste SEO-problemen i Shopify?","acceptedAnswer":{"@type":"Answer","text":"Vanliga Shopify SEO-problem: (1) Duplicate content från /collections/ och /products/ URL-strukturen. (2) Tunna kategori- och produktsidor. (3) Dålig LCP/Core Web Vitals på grund av stora bilder och tredjepartsappar. (4) Saknad strukturdata. (5) Fel hantering av facetterad navigering som skapar tusentals indexeringsbara URL:er."}},
-      {"@type":"Question","name":"Hur påverkar Core Web Vitals Shopify SEO?","acceptedAnswer":{"@type":"Answer","text":"Google använder Core Web Vitals (LCP, INP, CLS) som rankingfaktor via Page Experience-signalen. Shopify-butiker med dåliga CWV — typiskt orsakade av stora bilder, tunga JavaScript-appar och ooptimerade teman — rankar lägre. Dahlquist optimerar LCP mot <2,5s och CLS mot <0,1 för Shopify."}},
-      {"@type":"Question","name":"Hur lång tid tar det att förbättra Shopify SEO?","acceptedAnswer":{"@type":"Answer","text":"Tekniska SEO-förbättringar (strukturdata, kanoniska, sitemap) märks i Google Search Console inom 2–4 veckor. Rankingförbättringar för specifika sökord tar typiskt 2–6 månader beroende på konkurrensnivå och domänauktoritet. Core Web Vitals-förbättringar syns direkt efter implementation."}},
-      {"@type":"Question","name":"Hur hanterar man duplicate content i Shopify?","acceptedAnswer":{"@type":"Answer","text":"Shopify skapar automatiskt kanoniska URL:er för produkter som finns i flera samlingar (collections). Problemet är att Shopify inte alltid sätter kanoniska korrekt för alla URL-varianter. Dahlquist granskar er kanoniska-struktur och implementerar Liquid-kod för korrekt hantering."}},
-      {"@type":"Question","name":"Kan ni hjälpa med Shopify strukturdata?","acceptedAnswer":{"@type":"Answer","text":"Ja. Dahlquist implementerar JSON-LD strukturdata i Shopify-teman: Product-schema (pris, lager, recensioner), BreadcrumbList, Organization och WebSite. Korrekt produktstrukturdata ger Google Shopping-integration och rika sökresultat."}}
-    ]
-  }
-  </script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, sans-serif; color: #1a1a2e; background: #fff; line-height: 1.65; }
-    a { color: #e67e00; text-decoration: none; } a:hover { text-decoration: underline; }
-    .header { background: #e67e00; color: #fff; padding: 1rem 2rem; }
-    .header h1 { font-size: 1.1rem; font-weight: 600; }
-    .hero { background: linear-gradient(135deg, #fff8f0 0%, #fff0dc 100%); padding: 4rem 2rem; text-align: center; }
-    .hero h2 { font-size: 2.5rem; font-weight: 800; color: #e67e00; margin-bottom: 1rem; line-height: 1.2; }
-    .hero p { font-size: 1.2rem; color: #444; max-width: 680px; margin: 0 auto 2rem; }
-    .cta-btn { display: inline-block; background: #e67e00; color: #fff; padding: 1rem 2.5rem; border-radius: 6px; font-size: 1.1rem; font-weight: 600; }
-    .cta-btn:hover { background: #b56200; text-decoration: none; }
-    .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 1.5rem 2rem; background: #fff; border-bottom: 1px solid #fce0b8; }
-    .badge-item { background: #fff8f0; border: 1px solid #fce0b8; border-radius: 6px; padding: 0.5rem 1.25rem; font-size: 0.9rem; font-weight: 600; color: #e67e00; }
-    .main { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
-    .section { margin-bottom: 3rem; }
-    .section h3 { font-size: 1.5rem; font-weight: 700; color: #e67e00; margin-bottom: 1rem; border-left: 4px solid #e67e00; padding-left: 0.75rem; }
-    .section p { color: #444; margin-bottom: 0.75rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
-    .card { background: #fff8f0; border: 1px solid #fce0b8; border-radius: 8px; padding: 1.5rem; }
-    .card h4 { font-size: 1.05rem; font-weight: 700; color: #e67e00; margin-bottom: 0.5rem; }
-    .card p { font-size: 0.95rem; color: #555; }
-    .compare-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 0.95rem; }
-    .compare-table th { background: #e67e00; color: #fff; padding: 0.75rem 1rem; text-align: left; }
-    .compare-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #eee; color: #444; }
-    .compare-table tr:nth-child(even) td { background: #fff8f0; }
-    .stat-row { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin: 2rem 0; }
-    .stat { text-align: center; }
-    .stat .num { font-size: 2.5rem; font-weight: 800; color: #e67e00; }
-    .stat .label { font-size: 0.9rem; color: #666; }
-    .steps { counter-reset: step; list-style: none; margin-top: 1rem; }
-    .steps li { counter-increment: step; padding: 1rem 1rem 1rem 3.5rem; border-bottom: 1px solid #eee; position: relative; color: #444; }
-    .steps li::before { content: counter(step); position: absolute; left: 0; top: 0.9rem; width: 2rem; height: 2rem; background: #e67e00; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
-    .faq-section { margin-bottom: 3rem; }
-    .faq-section h3 { font-size: 1.5rem; font-weight: 700; color: #e67e00; margin-bottom: 1.5rem; border-left: 4px solid #e67e00; padding-left: 0.75rem; }
-    .faq-item { border-bottom: 1px solid #eee; padding: 1.25rem 0; }
-    .faq-item h4 { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem; }
-    .faq-item p { color: #555; font-size: 0.95rem; }
-    .link-section { background: #e67e00; color: #fff; padding: 3rem 2rem; text-align: center; }
-    .link-section h3 { font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem; }
-    .link-section p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-    .link-section a { background: #fff; color: #e67e00; padding: 1rem 2.5rem; border-radius: 6px; font-size: 1.1rem; font-weight: 700; display: inline-block; }
-    .link-section a:hover { background: #fff8f0; text-decoration: none; }
-    .footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; border-top: 1px solid #eee; }
-    @media (max-width: 600px) { .hero h2 { font-size: 1.8rem; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopify SEO — gratis SEO-checker och guider för Shopify-butiker</title>
+<meta name="description" content="Gratis SEO-checker för Shopify och Shopify Plus. Klistra in din butiks-URL och få 15 SEO-kontroller på 10 sekunder. Plus djupguider om schema, migrering och technical SEO.">
+<link rel="canonical" href="https://shopifyseo.se/">
+<meta property="og:title" content="Shopify SEO — gratis SEO-checker och guider">
+<meta property="og:description" content="Kör 15 SEO-kontroller på din Shopify-butik på 10 sekunder. Plus djupguider om schema, migrering och tekniskt SEO.">
+<meta property="og:url" content="https://shopifyseo.se/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large">
 
-  <meta property="og:url" content="https://shopifyseo.se/" />
-  <link rel="icon" href="https://dahlquist.se/favicon.ico" type="image/x-icon" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Shopify SEO Sverige – Dahlquist" />
-  <meta name="twitter:description" content="Shopify SEO-specialist. Teknisk SEO, strukturdata och Core Web Vitals-optimering för ökad organisk synlighet i Google." />
-  <meta name="twitter:image" content="https://dahlquist.se/images/og-dahlquist.jpg" />
-  <meta name="theme-color" content="#e8472b" />
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Article",
-  "headline":"Shopify SEO Sverige",
-  "description":"Shopify SEO-specialist i Sverige. Dahlquist optimerar Shopify-butiker för Google med teknisk SEO, strukturdata, Core Web Vitals och innehållsstrategi för ökad organisk försäljning.",
-  "image":"https://dahlquist.se/images/og-dahlquist.jpg",
-  "url":"https://shopifyseo.se/",
-  "datePublished":"2026-04-05",
-  "dateModified":"2026-05-08",
-  "inLanguage":"sv-SE",
-  "author":{"@type":"Person","name":"Niklas Dahlquist","url":"https://dahlquist.se/om-oss","sameAs":["https://www.linkedin.com/in/niklasdahlquist/"]},
-  "publisher":{"@type":"Organization","name":"Dahlquist E-handelskonsulter AB","url":"https://dahlquist.se","logo":{"@type":"ImageObject","url":"https://dahlquist.se/images/logo.png"}},
-  "mainEntityOfPage":{"@type":"WebPage","@id":"https://shopifyseo.se/"}
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://shopifyseo.se/#website",
+  "url": "https://shopifyseo.se/",
+  "name": "Shopify SEO",
+  "description": "Gratis SEO-checker och guider för Shopify-butiker.",
+  "inLanguage": "sv-SE",
+  "publisher": { "@id": "https://shopifyseo.se/#publisher" }
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://shopifyseo.se/#publisher",
+  "name": "Shopify SEO (redaktionen)",
+  "url": "https://shopifyseo.se/",
+  "description": "Gratis SEO-verktyg och djupguider för Shopify-handlare. Drivs öppet av Dahlquist E-handelskonsulter AB.",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Dahlquist E-handelskonsulter AB",
+    "url": "https://dahlquist.se"
+  }
+}
+</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://shopifyseo.se/#tool",
+  "name": "Shopify SEO Checker",
+  "description": "Gratis verktyg som kör 15 SEO-kontroller på en Shopify-butik: title, meta description, canonical, H1, Open Graph, schema, hreflang, robots.txt och sitemap.xml.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://shopifyseo.se/",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SEK" },
+  "creator": { "@id": "https://shopifyseo.se/#publisher" }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "sv-SE",
+  "mainEntity": [
+    {"@type":"Question","name":"Vad kollar Shopify SEO Checker?","acceptedAnswer":{"@type":"Answer","text":"15 kontroller per URL: HTTPS, title-tag, meta description, canonical, H1-count, Open Graph, Twitter Card, viewport, HTML lang, JSON-LD schema-blocks, schema-täckning (Organization, Product, BreadcrumbList), alt-texter på bilder, hreflang, robots.txt och sitemap.xml."}},
+    {"@type":"Question","name":"Kostar det något?","acceptedAnswer":{"@type":"Answer","text":"Nej. Verktyget är gratis och kräver ingen registrering. Du kan köra obegränsat antal kontroller."}},
+    {"@type":"Question","name":"Sparar ni mina URL:er?","acceptedAnswer":{"@type":"Answer","text":"Nej. URL:en skickas till vår serverless function som hämtar sidan, kör kontrollerna och returnerar resultatet. Vi lagrar inte datan."}},
+    {"@type":"Question","name":"Funkar det på andra plattformar än Shopify?","acceptedAnswer":{"@type":"Answer","text":"Ja. Kontrollerna är generella SEO-best-practices som funkar på Shopify, Magento, WooCommerce, Centra, Litium och alla andra plattformar. Vi är extra tydliga kring Shopify-specifika saker (Product-schema, theme alt-texter)."}},
+    {"@type":"Question","name":"Vem ligger bakom?","acceptedAnswer":{"@type":"Answer","text":"Verktyget drivs av Dahlquist E-handelskonsulter AB — en svensk Shopify Selected Partner. Vi byggde det för att det inte fanns ett vettigt gratisalternativ på svenska. Inga affiliate-länkar, inga betalda placeringar."}}
+  ]
+}
+</script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1f2e;background:#fafbfc;line-height:1.6}
+  a{color:#5e3bff;text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{background:#fff;border-bottom:1px solid #e3e8ef;padding:14px 0;position:sticky;top:0;z-index:10}
+  .top{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .brand{font-weight:800;font-size:1.1rem;color:#0d1f3c}
+  .brand span{color:#5e3bff}
+  nav a{margin-left:20px;color:#3b4858;font-weight:500;font-size:.95rem}
+  @media (max-width:640px){nav{display:none}}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px}
+  .hero{padding:56px 24px 24px;background:linear-gradient(180deg,#fff 0%,#f3efff 100%)}
+  .hero h1{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin-bottom:14px;max-width:780px}
+  .lead{font-size:1.15rem;color:#4a5568;max-width:760px;margin-bottom:24px}
+  .badge-row{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .b{background:#fff;border:1px solid #d6c9ff;border-radius:99px;padding:5px 12px;font-size:.78rem;color:#5e3bff;font-weight:600}
+  .tool{background:#fff;border:1px solid #e3e8ef;border-radius:12px;padding:28px;margin:32px 0;box-shadow:0 4px 24px rgba(94,59,255,.06)}
+  .tool h2{font-size:1.35rem;font-weight:700;margin-bottom:12px;color:#0d1f3c}
+  .tool-form{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+  .tool-form input{flex:1;min-width:260px;padding:14px 16px;font-size:1rem;border:1.5px solid #e3e8ef;border-radius:8px;font-family:inherit;color:#1a1f2e}
+  .tool-form input:focus{outline:none;border-color:#5e3bff;box-shadow:0 0 0 3px rgba(94,59,255,.12)}
+  .tool-form button{padding:14px 28px;font-size:1rem;font-weight:600;background:#5e3bff;color:#fff;border:none;border-radius:8px;cursor:pointer;font-family:inherit;transition:background .15s}
+  .tool-form button:hover{background:#4a2eef}
+  .tool-form button:disabled{background:#9089b8;cursor:not-allowed}
+  .tool-meta{font-size:.85rem;color:#6b7280;margin-top:10px}
+  #result{margin-top:24px}
+  .score-box{display:flex;align-items:center;gap:20px;padding:20px;background:#f3efff;border-radius:10px;margin-bottom:16px}
+  .score-num{font-size:3rem;font-weight:800;color:#5e3bff;line-height:1}
+  .score-label{font-size:.85rem;color:#6b7280;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+  .score-summary{flex:1;font-size:1rem;color:#1a1f2e}
+  .check-list{list-style:none}
+  .check{display:flex;gap:14px;padding:14px;border-bottom:1px solid #f0f3f7;align-items:flex-start}
+  .check-icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+  .check-icon.pass{background:#dcfce7;color:#15803d}
+  .check-icon.warn{background:#fef3c7;color:#a16207}
+  .check-icon.fail{background:#fee2e2;color:#b91c1c}
+  .check-body{flex:1}
+  .check-name{font-weight:600;color:#0d1f3c;font-size:.98rem}
+  .check-value{font-size:.85rem;color:#6b7280;margin-top:2px;font-family:'SF Mono','Menlo',monospace}
+  .check-details{font-size:.9rem;color:#4a5568;margin-top:6px}
+  .loading{padding:32px;text-align:center;color:#6b7280}
+  .loading .spinner{display:inline-block;width:32px;height:32px;border:3px solid #e3e8ef;border-top-color:#5e3bff;border-radius:50%;animation:spin .8s linear infinite;margin-bottom:12px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .error{padding:16px;background:#fee2e2;color:#b91c1c;border-radius:8px}
+  section{margin-bottom:56px}
+  h2{font-size:clamp(1.4rem,2.4vw,1.8rem);font-weight:700;color:#0d1f3c;margin-bottom:18px}
+  .guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+  .guide-card{background:#fff;border:1px solid #e3e8ef;border-radius:10px;padding:22px;transition:border-color .15s,box-shadow .15s}
+  .guide-card:hover{border-color:#9180e0;box-shadow:0 4px 18px rgba(94,59,255,.08)}
+  .guide-card h3{font-size:1.1rem;font-weight:700;color:#0d1f3c;margin-bottom:8px}
+  .guide-card .meta{font-size:.8rem;color:#6b7280;margin-bottom:8px}
+  .guide-card p{font-size:.92rem;color:#4a5568;margin-bottom:12px}
+  .guide-card a{font-weight:600;font-size:.9rem}
+  details{background:#fff;border:1px solid #e3e8ef;border-radius:8px;margin-bottom:8px;overflow:hidden}
+  summary{padding:14px 18px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:#0d1f3c}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:'+';color:#5e3bff;font-size:1.4rem;font-weight:300}
+  details[open] summary::after{content:'−'}
+  details p{padding:0 18px 16px;color:#4a5568}
+  footer{background:#1a1530;color:rgba(255,255,255,.72);padding:36px 0 24px;font-size:.88rem;line-height:1.7;margin-top:48px}
+  footer .container{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  @media (max-width:640px){footer .container{grid-template-columns:1fr}}
+  footer h4{color:#fff;font-size:.95rem;margin-bottom:8px}
+  footer .disc{background:rgba(255,255,255,.06);border-left:3px solid #b5a7ff;padding:14px 16px;border-radius:4px;font-size:.86rem}
+  footer a{color:#c6b8ff}
+  .copy{border-top:1px solid rgba(255,255,255,.1);padding-top:14px;margin-top:24px;text-align:center;font-size:.78rem;color:rgba(255,255,255,.5)}
+</style>
 </head>
 <body>
-  <header class="header"><h1>Shopify SEO Sverige</h1></header>
-  <section class="hero">
-    <h2>Shopify SEO som driver organisk försäljning</h2>
-    <p>Vi kombinerar teknisk Shopify-kunskap med SEO-expertis för att ranka er butik högre i Google — teknisk SEO, strukturdata, Core Web Vitals och innehållsstrategi.</p>
-    <a href="https://dahlquist.se/shopify-expert" class="cta-btn">Boka Shopify SEO-genomgång</a>
-  </section>
-  <div class="badges">
-    <span class="badge-item">Shopify Plus Partner</span>
-    <span class="badge-item">Teknisk SEO</span>
-    <span class="badge-item">Core Web Vitals</span>
-    <span class="badge-item">JSON-LD Strukturdata</span>
-    <span class="badge-item">150+ projekt</span>
-  </div>
-  <main class="main">
-    <article>
-      <section class="section">
-        <div class="stat-row">
-          <div class="stat"><div class="num">&lt;2.5s</div><div class="label">Mål-LCP</div></div>
-          <div class="stat"><div class="num">&lt;0.1</div><div class="label">Mål-CLS</div></div>
-          <div class="stat"><div class="num">3–6mån</div><div class="label">Synliga rankinglyft</div></div>
-          <div class="stat"><div class="num">150+</div><div class="label">Shopify-projekt</div></div>
-        </div>
-      </section>
-      <section class="section">
-        <h3>Shopify SEO — vad innebär det?</h3>
-        <p>Shopify-butiker har specifika SEO-utmaningar som kräver en Shopify-specialist: plattformens URL-struktur skapar duplicate content-risker, temakoden påverkar Core Web Vitals, och Liquid-templatingspråket begränsar hur strukturdata kan implementeras utan att röra temakoden.</p>
-        <p>Dahlquist kombinerar djup Shopify-teknisk kompetens med SEO-kunskap. Vi förstår hur Googles crawlers interagerar med Shopifys specifika URL-struktur, hur Checkout-sidor påverkar sitelinks och hur Shopify Markets hanterar hreflang för flerspråkiga butiker.</p>
-      </section>
-      <section class="section">
-        <h3>Shopify SEO-kategorier</h3>
-        <table class="compare-table">
-          <tr><th>Kategori</th><th>Vad vi gör</th><th>Impact</th></tr>
-          <tr><td>Teknisk SEO</td><td>Kanoniska, sitemap, robots.txt, hreflang</td><td>Hög</td></tr>
-          <tr><td>Core Web Vitals</td><td>LCP, CLS, INP-optimering</td><td>Hög</td></tr>
-          <tr><td>Strukturdata</td><td>Product, BreadcrumbList, Organization JSON-LD</td><td>Medium–Hög</td></tr>
-          <tr><td>On-Page SEO</td><td>Titlar, meta, H1–H3, alt-text</td><td>Medium</td></tr>
-          <tr><td>Innehållsstrategi</td><td>Kategori- och produktsideinnehåll</td><td>Hög (lång sikt)</td></tr>
-          <tr><td>Intern länkning</td><td>Länkstruktur, ankartexter, silobstruktur</td><td>Medium</td></tr>
-        </table>
-      </section>
-      <section class="section">
-        <h3>Shopify SEO-tjänster</h3>
-        <div class="grid">
-          <div class="card"><h4>Teknisk SEO-revision</h4><p>Genomgång av er Shopify-butiks tekniska SEO — kanoniska URL:er, sitemap-konfiguration, robots.txt, crawlability och indexeringsstatus.</p></div>
-          <div class="card"><h4>Core Web Vitals-optimering</h4><p>LCP under 2,5s och CLS under 0,1 via bildoptimering, lazy loading, JavaScript-reducering och temakodoptimering.</p></div>
-          <div class="card"><h4>Strukturdata (JSON-LD)</h4><p>Product-schema med pris, lagertstatus och recensioner, BreadcrumbList och Organization implementeras i Shopify Liquid-teman.</p></div>
-          <div class="card"><h4>Duplicate content</h4><p>Hantering av Shopifys /collections/x/products/y-URL:er och korrekt kanonisk-implementation för att undvika duplicate content-straff.</p></div>
-          <div class="card"><h4>Hreflang för flerspråkiga butiker</h4><p>Korrekt hreflang-implementation för Shopify Markets-butiker med svenska, norska och danska URL:er.</p></div>
-          <div class="card"><h4>Innehållsstrategi</h4><p>Optimering av kategori- och produktsidor med unikt innehåll, FAQ-sektioner och intern länkning för organisk synlighet.</p></div>
-        </div>
-      </section>
-      <section class="section">
-        <h3>Shopify SEO-process</h3>
-        <ol class="steps">
-          <li><strong>SEO-revision</strong> — Fullständig genomgång av teknisk SEO, Core Web Vitals, strukturdata och innehållskvalitet. Resulterar i en prioriterad åtgärdslista.</li>
-          <li><strong>Teknisk åtgärd</strong> — Vi åtgärdar kritiska tekniska problem: kanoniska, hreflang, sitemap och robots.txt. Kräver Liquid-kodändringar i temat.</li>
-          <li><strong>Performance-optimering</strong> — Bildoptimering, lazy loading och app-reducering för förbättrade Core Web Vitals och LCP.</li>
-          <li><strong>Strukturdata-implementation</strong> — JSON-LD för produkter, kategorier och organisation implementeras och valideras i Google Rich Results Test.</li>
-          <li><strong>Innehållsoptimering</strong> — Kategori- och produktsidestext optimeras med primärnyckelord, LSI-termer och FAQ-sektioner.</li>
-          <li><strong>Monitoring och rapportering</strong> — Löpande uppföljning i Google Search Console med ranking-tracking och åtgärder vid algoritm-uppdateringar.</li>
-        </ol>
-      </section>
-      <section class="faq-section">
-        <h3>Vanliga frågor om Shopify SEO</h3>
-        <div class="faq-item"><h4>Vad är Shopify SEO?</h4><p>Shopify SEO är optimering av Shopify-butiker för Google. Det inkluderar teknisk SEO (kanoniska URL:er, sitemap), strukturdata (Product JSON-LD), Core Web Vitals och innehållsstrategi för kategori- och produktsidor.</p></div>
-        <div class="faq-item"><h4>Vilka är de vanligaste SEO-problemen i Shopify?</h4><p>Vanliga problem: duplicate content från /collections/-strukturen, tunna kategori- och produktsidor, dåliga Core Web Vitals, saknad strukturdata och fel hantering av facetterad navigering.</p></div>
-        <div class="faq-item"><h4>Hur påverkar Core Web Vitals Shopify SEO?</h4><p>Google använder Core Web Vitals som rankingfaktor. Shopify-butiker med dåliga CWV — typiskt orsakade av stora bilder och tunga JavaScript-appar — rankar lägre. Vi optimerar LCP mot &lt;2,5s och CLS mot &lt;0,1.</p></div>
-        <div class="faq-item"><h4>Hur lång tid tar det att förbättra Shopify SEO?</h4><p>Tekniska förbättringar syns i GSC inom 2–4 veckor. Rankingförbättringar tar typiskt 2–6 månader beroende på konkurrensnivå och domänauktoritet.</p></div>
-        <div class="faq-item"><h4>Hur hanterar man duplicate content i Shopify?</h4><p>Shopify skapar automatiskt kanoniska URL:er för produkter i flera collections. Vi granskar er kanoniska-struktur och implementerar Liquid-kod för korrekt hantering.</p></div>
-        <div class="faq-item"><h4>Kan ni hjälpa med Shopify strukturdata?</h4><p>Ja. Dahlquist implementerar JSON-LD strukturdata i Shopify-teman: Product-schema, BreadcrumbList, Organization och WebSite. Korrekt strukturdata ger Google Shopping-integration och rika sökresultat.</p></div>
-      </section>
-    </article>
-  </main>
-  <section class="link-section">
-    <h3>Vill du ranka högre med Shopify?</h3>
-    <p>Boka en kostnadsfri SEO-genomgång av er Shopify-butik.</p>
-    <a href="https://dahlquist.se/shopify-expert">Kontakta Dahlquist Shopify SEO &rarr;</a>
-  </section>
-  <section style="background:#fff8f0;border-top:3px solid #e67e00;padding:2.5rem 2rem;">
-    <div style="max-width:900px;margin:0 auto;">
-      <h2 style="font-size:1.1rem;font-weight:700;color:#e67e00;margin-bottom:0.75rem;">Om Dahlquist E-handelskonsulter AB</h2>
-      <p style="color:#555;font-size:0.95rem;line-height:1.65;margin-bottom:0.5rem;">Grundades 2016 av <strong>Niklas Dahlquist</strong>. Certifierad <strong>Shopify Plus Partner</strong> med 150+ projekt. Vi kombinerar teknisk Shopify-expertis med SEO-kunskap för maximal organisk synlighet.</p>
-      <p style="color:#888;font-size:0.85rem;margin-top:1rem;">Senast uppdaterad: 5 april 2026 &middot; <a href="https://dahlquist.se" style="color:#e67e00;">dahlquist.se</a></p>
-    </div>
-  </section>
-  
-  <section style="background:#fff;padding:1.5rem 2rem;border-top:1px solid #e2e8f0;">
-    <div style="max-width:900px;margin:0 auto;display:flex;gap:1.25rem;align-items:center;">
-      <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#1a4d7c 0%,#0a2e4d 100%);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;flex-shrink:0;">ND</div>
-      <div style="flex:1;font-size:0.92rem;color:#2a3340;line-height:1.55;">
-        <strong>Av Niklas Dahlquist</strong> · Grundare och E-handelsutvecklare · Dahlquist E-handelskonsulter AB sedan 2016
-        <div style="margin-top:0.35rem;">
-          <a href="https://www.linkedin.com/in/niklasdahlquist/" rel="noopener author" style="margin-right:0.75rem;">LinkedIn</a>
-          <a href="https://dahlquist.se/om-oss" rel="noopener author" style="margin-right:0.75rem;">Om oss</a>
-          <a href="https://dahlquist.se/case" rel="noopener">Case</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section style="background:#fff;padding:2rem;border-top:1px solid #e2e8f0;">
-    <div style="max-width:900px;margin:0 auto;">
-      <h2 style="font-size:1.05rem;font-weight:700;color:#0a2e4d;margin-bottom:0.85rem;">Relaterade resurser hos Dahlquist</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0.65rem;">
-      <a href="https://magentoexperten.se" style="background:#f4f7fb;border-left:3px solid #1a4d7c;padding:0.6rem 1rem;border-radius:0 6px 6px 0;font-size:0.92rem;color:#0a2e4d;font-weight:600;text-decoration:none;display:block;">Magento Expert →</a>
-      <a href="https://klaviyo.se" style="background:#f4f7fb;border-left:3px solid #1a4d7c;padding:0.6rem 1rem;border-radius:0 6px 6px 0;font-size:0.92rem;color:#0a2e4d;font-weight:600;text-decoration:none;display:block;">Klaviyo Sverige →</a>
-      <a href="https://punchout.nu" style="background:#f4f7fb;border-left:3px solid #1a4d7c;padding:0.6rem 1rem;border-radius:0 6px 6px 0;font-size:0.92rem;color:#0a2e4d;font-weight:600;text-decoration:none;display:block;">PunchOut B2B →</a>
-      <a href="https://shopifyb2b.se" style="background:#f4f7fb;border-left:3px solid #1a4d7c;padding:0.6rem 1rem;border-radius:0 6px 6px 0;font-size:0.92rem;color:#0a2e4d;font-weight:600;text-decoration:none;display:block;">Shopify B2B →</a>
-      <a href="https://magento-konsulter.se" style="background:#f4f7fb;border-left:3px solid #1a4d7c;padding:0.6rem 1rem;border-radius:0 6px 6px 0;font-size:0.92rem;color:#0a2e4d;font-weight:600;text-decoration:none;display:block;">Magento-konsulter →</a>
+<header>
+  <div class="top">
+    <div class="brand">Shopify <span>SEO</span></div>
+    <nav>
+      <a href="#tool">Verktyget</a>
+      <a href="#guider">Guider</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="container">
+      <div class="badge-row">
+        <span class="b">Gratis</span>
+        <span class="b">Ingen registrering</span>
+        <span class="b">15 kontroller på 10 sek</span>
+      </div>
+      <h1>SEO-checker och guider för Shopify-butiker</h1>
+      <p class="lead">Klistra in din butiks-URL och få en konkret rapport på 15 SEO-punkter. Plus djupguider om schema, migrering och technical SEO för Shopify och Shopify Plus.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <section id="tool" class="tool">
+      <h2>Kör SEO-check</h2>
+      <p style="color:#4a5568;margin-bottom:8px">Klistra in en URL från din Shopify-butik. Vi hämtar sidan, kollar 15 saker och returnerar en rapport.</p>
+      <form class="tool-form" id="check-form">
+        <input type="url" name="url" id="url-input" placeholder="https://din-butik.se/" required>
+        <button type="submit" id="check-btn">Kör analys</button>
+      </form>
+      <p class="tool-meta">Tar typiskt 5–10 sekunder. Kollar bl.a. title, description, canonical, schema, OG-tags, alt-text, robots.txt och sitemap.</p>
+      <div id="result"></div>
+    </section>
+
+    <section id="guider">
+      <h2>Djupguider</h2>
+      <p style="color:#4a5568;margin-bottom:18px;max-width:680px">Konkret, källhänvisad teknisk SEO för Shopify och Shopify Plus. Skrivna av folk som faktiskt bygger butiker — inte AI-genererat fyllnadsinnehåll.</p>
+      <div class="guide-grid">
+        <article class="guide-card">
+          <h3>Shopify SEO 2026 — komplett guide</h3>
+          <p class="meta">12 min läsning · Pillar guide · Uppdaterad maj 2026</p>
+          <p>Hela bilden: theme-baserad SEO, Liquid-template-tweaks, schema, performance, internationella butiker via Shopify Markets. Med konkreta kod-exempel.</p>
+          <a href="/guider/shopify-seo-guide/">Läs guiden →</a>
+        </article>
+        <article class="guide-card">
+          <h3>Schema för Shopify-butiker</h3>
+          <p class="meta">8 min · Tekniskt djup</p>
+          <p>Vilka JSON-LD-typer behöver en svensk Shopify-butik? Organization, Product, BreadcrumbList, FAQPage, Review — när, var och hur man undviker duplicate-schema-felen.</p>
+          <a href="/guider/shopify-schema/">Läs guiden →</a>
+        </article>
+        <article class="guide-card">
+          <h3>Migrera SEO vid plattformsbyte</h3>
+          <p class="meta">10 min · Migration checklist</p>
+          <p>Hur man flyttar från Magento, WooCommerce eller Wikinggruppen till Shopify utan att tappa rankings. 301-redirects, hreflang-bevarande, schema-mapping, sitemap-strategi.</p>
+          <a href="/guider/migrera-seo-shopify/">Läs guiden →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Vanliga frågor</h2>
+
+      <details>
+        <summary>Vad kollar Shopify SEO Checker?</summary>
+        <p>15 kontroller per URL: HTTPS, title-tag, meta description, canonical, H1-count, Open Graph, Twitter Card, viewport, HTML lang, JSON-LD schema-blocks, schema-täckning (Organization, Product, BreadcrumbList), alt-texter på bilder, hreflang, robots.txt och sitemap.xml. Resultatet visas på 5–10 sekunder med score 0–100 och konkreta åtgärder per failed check.</p>
+      </details>
+      <details>
+        <summary>Kostar det något?</summary>
+        <p>Nej. Verktyget är gratis och kräver ingen registrering. Du kan köra obegränsat antal kontroller. Vi tar inte heller in din mejladress.</p>
+      </details>
+      <details>
+        <summary>Sparar ni mina URL:er?</summary>
+        <p>Nej. URL:en skickas till vår serverless function på Vercel som hämtar sidan, kör kontrollerna och returnerar resultatet. Vi lagrar varken URL:en eller resultatet. Vercel-loggar rullar 24h enligt deras default-policy.</p>
+      </details>
+      <details>
+        <summary>Funkar det på andra plattformar än Shopify?</summary>
+        <p>Ja — kontrollerna är generella SEO best-practices som funkar för Magento, WooCommerce, Centra, Litium, Webflow eller vilken plattform som helst. Vi är extra tydliga kring Shopify-specifika saker (Product-schema från theme, alt-texter på collection-bilder) men hela check-listan är användbar oavsett stack.</p>
+      </details>
+      <details>
+        <summary>Vem ligger bakom?</summary>
+        <p>Verktyget drivs av <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter AB</a> — en svensk Shopify Selected Partner. Vi byggde det för att det inte fanns ett vettigt gratis-alternativ på svenska. Inga affiliate-länkar, inga betalda placeringar.</p>
+      </details>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <h4>Om Shopify SEO</h4>
+      <p>Gratis SEO-checker och djupguider för Shopify-butiker. Inget mejlfält. Inga affiliate-länkar. Vi tar inte betalt för placeringar.</p>
+      <p style="margin-top:8px"><a href="/llms.txt">llms.txt</a> · <a href="mailto:redaktion@shopifyseo.se">Kontakta redaktionen</a></p>
+    </div>
+    <div>
+      <h4>Ägarskap &amp; transparens</h4>
+      <div class="disc">
+        Drivs av <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter AB</a> (org.nr 559106-8357), en svensk Shopify Selected Partner. Vi byggde detta som en branschtjänst — det finns ingen up-sell, inget "Vill du att vi fixar?" på resultatsidan. Behöver du hjälp med implementation finns vi förstås där, men verktyget är fristående.
       </div>
     </div>
-  </section>
-<footer class="footer"><p>En sajt av <a href="https://dahlquist.se">Dahlquist E-handelskonsulter AB</a> &mdash; Shopify Plus Partner sedan 2016</p></footer>
+    <div class="copy" style="grid-column:1/-1">© 2026 Shopify SEO &middot; Gratis SEO-verktyg för svenska Shopify-handlare.</div>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('check-form');
+  const btn = document.getElementById('check-btn');
+  const out = document.getElementById('result');
+  const ICONS = { pass: '✓', warn: '!', fail: '✗' };
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const url = document.getElementById('url-input').value.trim();
+    if (!url) return;
+    btn.disabled = true;
+    btn.textContent = 'Kör...';
+    out.innerHTML = '<div class="loading"><div class="spinner"></div><div>Hämtar och analyserar...</div></div>';
+
+    try {
+      const r = await fetch(`/api/check?url=${encodeURIComponent(url)}`);
+      const data = await r.json();
+      if (!r.ok || data.error) {
+        out.innerHTML = `<div class="error">${escapeHtml(data.error || 'Något gick fel.')}</div>`;
+        return;
+      }
+      renderResult(data);
+    } catch (err) {
+      out.innerHTML = `<div class="error">Tekniskt fel: ${escapeHtml(err.message)}</div>`;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Kör analys';
+    }
+  });
+
+  function renderResult(d) {
+    const checks = d.checks.map(c => `
+      <li class="check">
+        <span class="check-icon ${c.status}">${ICONS[c.status]}</span>
+        <div class="check-body">
+          <div class="check-name">${escapeHtml(c.name)}</div>
+          <div class="check-value">${escapeHtml(c.value || '')}</div>
+          ${c.details ? `<div class="check-details">${escapeHtml(c.details)}</div>` : ''}
+        </div>
+      </li>
+    `).join('');
+    out.innerHTML = `
+      <div class="score-box">
+        <div>
+          <div class="score-num">${d.score}</div>
+          <div class="score-label">SEO-score</div>
+        </div>
+        <div class="score-summary">${escapeHtml(d.summary)}</div>
+      </div>
+      <ul class="check-list">${checks}</ul>
+    `;
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+  }
+</script>
+
 </body>
 </html>

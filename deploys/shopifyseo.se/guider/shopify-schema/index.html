@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schema för Shopify-butiker — Organization, Product, BreadcrumbList | Shopify SEO</title>
+<meta name="description" content="Vilka JSON-LD-typer behöver en svensk Shopify-butik? Konkret guide om Organization, Product, BreadcrumbList, FAQPage och Review — när, var och hur man undviker duplicate-schema-felen.">
+<link rel="canonical" href="https://shopifyseo.se/guider/shopify-schema/">
+<meta property="og:title" content="Schema för Shopify-butiker — Organization, Product, BreadcrumbList">
+<meta property="og:description" content="Komplett schema-guide för Shopify: JSON-LD-typer som behövs, kod-exempel, vanliga fel.">
+<meta property="og:url" content="https://shopifyseo.se/guider/shopify-schema/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Niklas Dahlquist">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://shopifyseo.se/guider/shopify-schema/#article",
+  "headline": "Schema för Shopify-butiker — Organization, Product, BreadcrumbList",
+  "description": "JSON-LD-typer för Shopify: Organization, Product, BreadcrumbList, FAQPage, Review med kod-exempel.",
+  "url": "https://shopifyseo.se/guider/shopify-schema/",
+  "datePublished": "2026-05-18",
+  "dateModified": "2026-05-18",
+  "inLanguage": "sv-SE",
+  "proficiencyLevel": "Intermediate",
+  "author": {
+    "@type": "Person",
+    "name": "Niklas Dahlquist",
+    "jobTitle": "VD, Dahlquist E-handelskonsulter",
+    "url": "https://dahlquist.se/om-oss",
+    "sameAs": "https://www.linkedin.com/in/niklasdahlquist/"
+  },
+  "publisher": { "@id": "https://shopifyseo.se/#publisher" },
+  "articleSection": ["Schema", "JSON-LD", "Shopify", "Tekniskt SEO"],
+  "keywords": "Shopify schema, JSON-LD, Product schema, Organization schema, BreadcrumbList"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Hem", "item": "https://shopifyseo.se/"},
+    {"@type": "ListItem", "position": 2, "name": "Guider", "item": "https://shopifyseo.se/#guider"},
+    {"@type": "ListItem", "position": 3, "name": "Schema för Shopify-butiker", "item": "https://shopifyseo.se/guider/shopify-schema/"}
+  ]
+}
+</script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1f2e;background:#fafbfc;line-height:1.7}
+  a{color:#5e3bff;text-decoration:none}a:hover{text-decoration:underline}
+  header{background:#fff;border-bottom:1px solid #e3e8ef;padding:14px 0}
+  .top{max-width:780px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:800;color:#0d1f3c}.brand span{color:#5e3bff}
+  .container{max-width:780px;margin:0 auto;padding:0 24px}
+  article{padding:48px 0}
+  .breadcrumb{font-size:.85rem;color:#6b7280;margin-bottom:24px}
+  h1{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;color:#0d1f3c;line-height:1.2;margin-bottom:14px}
+  .byline{font-size:.9rem;color:#6b7280;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #e3e8ef}
+  .lead{font-size:1.15rem;color:#3b4858;margin-bottom:32px;font-weight:500}
+  h2{font-size:1.5rem;font-weight:700;color:#0d1f3c;margin:44px 0 16px}
+  h3{font-size:1.15rem;font-weight:700;color:#0d1f3c;margin:28px 0 10px}
+  p{margin-bottom:16px;color:#3b4858}
+  ul,ol{margin:0 0 20px 24px;color:#3b4858}
+  li{margin-bottom:8px}
+  code{background:#f3efff;color:#4a2eef;padding:2px 6px;border-radius:4px;font-family:'SF Mono','Menlo',monospace;font-size:.92em}
+  pre{background:#1a1530;color:#e9e3ff;padding:18px 22px;border-radius:10px;overflow-x:auto;margin:20px 0;font-family:'SF Mono','Menlo',monospace;font-size:.86rem;line-height:1.55}
+  pre code{background:none;color:inherit;padding:0;font-size:inherit}
+  .source-note{background:#f3efff;border-left:3px solid #5e3bff;padding:14px 18px;border-radius:4px;margin:24px 0;font-size:.92rem}
+  .source-note strong{color:#4a2eef}
+  .source-note a{color:#4a2eef;font-weight:600}
+  .warn-note{background:#fef3c7;border-left:3px solid #d97706;padding:14px 18px;border-radius:4px;margin:24px 0;font-size:.92rem}
+  .warn-note strong{color:#92400e}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.94rem;background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e3e8ef}
+  th,td{padding:10px 14px;text-align:left;border-bottom:1px solid #f0f3f7}
+  th{background:#f8fafc;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#3b4858}
+  footer{background:#1a1530;color:rgba(255,255,255,.72);padding:32px 0;font-size:.88rem;margin-top:64px}
+  footer .container{text-align:center}
+  footer h4{color:#fff;margin-bottom:8px}
+  footer a{color:#c6b8ff}
+  .author-card{background:#fff;border:1px solid #e3e8ef;border-radius:10px;padding:20px;display:flex;gap:16px;align-items:start;margin-top:48px}
+  .author-card .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#5e3bff,#9089b8);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0}
+  .author-card h4{font-size:1rem;color:#0d1f3c;margin-bottom:4px}
+  .author-card p{font-size:.9rem;margin:0;color:#4a5568}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <a href="/" class="brand">Shopify <span>SEO</span></a>
+    <a href="/" style="font-size:.9rem">← Tillbaka</a>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="/">Hem</a> / <a href="/#guider">Guider</a> / Schema för Shopify</p>
+
+    <h1>Schema för Shopify-butiker — vilka JSON-LD-typer behövs och hur undviker man duplicate-felen</h1>
+
+    <p class="byline">Skriven av <strong>Niklas Dahlquist</strong> &middot; Publicerad 18 maj 2026 &middot; 8 min läsning</p>
+
+    <p class="lead">Schema-markup är en av få SEO-investeringar med direkt mätbar effekt: rätt JSON-LD ger rich results i SERP, ökar CTR och förbättrar AI-citation-chans. Den här guiden visar vad en svensk Shopify-butik faktiskt behöver — och hur du undviker de vanliga felen som gör att Google ignorerar allt.</p>
+
+    <h2>De fem schemas du behöver (i den här ordningen)</h2>
+
+    <p>Glöm allt du läst om 30+ schema-typer. För en standard Shopify-butik räcker fem:</p>
+
+    <table>
+      <thead><tr><th>Schema</th><th>Var</th><th>Effekt i SERP</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Organization</strong></td><td>Sitewide (theme.liquid)</td><td>Knowledge Panel, entity disambiguation</td></tr>
+        <tr><td><strong>Product</strong></td><td>Per produktsida</td><td>Pris, lager, rating i SERP</td></tr>
+        <tr><td><strong>BreadcrumbList</strong></td><td>Kollektion + produkt</td><td>Breadcrumb-pil i SERP</td></tr>
+        <tr><td><strong>WebSite</strong></td><td>Sitewide</td><td>Sitelinks Search Box</td></tr>
+        <tr><td><strong>FAQPage</strong></td><td>Sidor med riktig FAQ</td><td>Expanderbara svar i SERP*</td></tr>
+      </tbody>
+    </table>
+
+    <p style="font-size:.85rem;color:#6b7280;margin-top:-12px">*FAQ-rich-results har minskats av Google 2023+, men strukturen är fortfarande värdefull för AI extraction (ChatGPT, Perplexity).</p>
+
+    <h2>1. Organization (sitewide)</h2>
+
+    <p>En enda Organization-schema sitewide. Lägg i <code>theme.liquid</code> i <code>&lt;head&gt;</code>.</p>
+
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ shop.url }}/#organization",
+  "name": "{{ shop.name }}",
+  "url": "{{ shop.url }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ 'logo.png' | asset_url }}",
+    "width": 200,
+    "height": 60
+  },
+  "description": "{{ shop.description | escape }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Gatuadress 1",
+    "addressLocality": "Stockholm",
+    "postalCode": "111 22",
+    "addressCountry": "SE"
+  },
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+46812345678",
+    "email": "info@example.se",
+    "availableLanguage": ["Swedish", "English"]
+  }],
+  "sameAs": [
+    "https://www.linkedin.com/company/your-brand",
+    "https://www.instagram.com/your-brand",
+    "https://www.facebook.com/your-brand"
+  ]
+}
+&lt;/script&gt;</code></pre>
+
+    <div class="source-note"><strong>Tips:</strong> Använd <code>@id</code> med <code>#organization</code>. Då kan andra schemas referera den med <code>{"@id": "..."}</code> istället för att duplicera all information.</div>
+
+    <h2>2. Product (per produktsida)</h2>
+
+    <p>Detta är schemat som ger pris/rating/availability i SERP. Lägg i <code>product.liquid</code> eller <code>main-product.liquid</code> (OS 2.0).</p>
+
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "{{ canonical_url }}#product",
+  "name": "{{ product.title | escape }}",
+  "description": "{{ product.description | strip_html | strip_newlines | escape | truncate: 500 }}",
+  "image": [
+    {% for image in product.images limit: 3 %}
+      "{{ image | img_url: '1200x' }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "sku": "{{ product.selected_or_first_available_variant.sku }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ product.vendor | default: shop.name | escape }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ canonical_url }}",
+    "priceCurrency": "{{ shop.currency }}",
+    "price": "{{ product.selected_or_first_available_variant.price | money_without_currency | replace: ',', '.' }}",
+    "priceValidUntil": "{{ 'now' | date: '%Y' | plus: 1 }}-12-31",
+    "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition"
+  }
+}
+&lt;/script&gt;</code></pre>
+
+    <div class="warn-note"><strong>Vanligt fel #1:</strong> Att skicka prisen som JavaScript-formaterad sträng (t.ex. <code>"1 299,00 kr"</code>). Google kräver maskinläsbart format: decimal med punkt, ingen valutasymbol, inga tusentalsavgränsare. Använd <code>money_without_currency</code> + <code>replace: ',', '.'</code>.</div>
+
+    <div class="warn-note"><strong>Vanligt fel #2:</strong> Att lägga till <code>aggregateRating</code> innan du har riktiga reviews (eller utan att kunna verifiera dem). Google har tagit bort rich results-eligibility 2023 för "self-serve ratings" — ratings måste komma från en verifierad app (Judge.me, Yotpo, Stamped) eller importeras från Google Reviews.</div>
+
+    <h2>3. BreadcrumbList</h2>
+
+    <p>Lägg på kollektions- och produktsidor. Hjälper Google visa breadcrumb-pil i SERP istället för bara URL:en.</p>
+
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Hem",
+      "item": "{{ shop.url }}/"
+    },
+    {% if collection %}
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ collection.title }}",
+      "item": "{{ shop.url }}{{ collection.url }}"
+    },
+    {% endif %}
+    {
+      "@type": "ListItem",
+      "position": {% if collection %}3{% else %}2{% endif %},
+      "name": "{{ product.title | escape }}",
+      "item": "{{ canonical_url }}"
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+
+    <h2>4. WebSite (sitewide, en gång)</h2>
+
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ shop.url }}/#website",
+  "url": "{{ shop.url }}",
+  "name": "{{ shop.name }}",
+  "inLanguage": "sv-SE",
+  "publisher": { "@id": "{{ shop.url }}/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+&lt;/script&gt;</code></pre>
+
+    <h2>5. FAQPage (endast på riktiga FAQ-sidor)</h2>
+
+    <p>Inte på alla sidor. Lägg bara där du har en faktisk FAQ-sektion synlig på sidan.</p>
+
+    <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "sv-SE",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hur lång leveranstid har ni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1–3 arbetsdagar med standardfrakt. Express samma dag om beställt före kl 12."
+      }
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+
+    <h2>De fyra vanligaste schema-felen på Shopify</h2>
+
+    <h3>Fel 1: Duplicate Product schema (theme + app)</h3>
+    <p>Många reviews-appar (Judge.me, Yotpo) lägger sin egen Product-schema med ratings. Om din theme också har Product-schema → två block för samma produkt → duplicate aggregateRating → Google ignorerar båda.</p>
+    <p><strong>Fix:</strong> Stäng av theme's Product-schema och låt review-appen sköta det. Eller tvärtom — men bara <em>en</em> ska finnas.</p>
+
+    <h3>Fel 2: aggregateRating utan reviews</h3>
+    <p>Att hårdkoda <code>"aggregateRating": {"ratingValue": "4.8", "reviewCount": "127"}</code> i schemat utan att ha 127 reviews synliga på sidan = Google ger manual action.</p>
+    <p><strong>Fix:</strong> Använd review-app som genererar schema dynamiskt från riktiga reviews.</p>
+
+    <h3>Fel 3: Felaktig prisformat</h3>
+    <p>Priset måste vara maskinläsbart: <code>"1299.00"</code> inte <code>"1 299 kr"</code>. Annars rich results disabled.</p>
+
+    <h3>Fel 4: Speakable på fel selectors</h3>
+    <p>Om du lägger Speakable-schema som pekar på CSS-selectors som inte finns i DOM → varning i GSC.</p>
+    <p><strong>Fix:</strong> Verifiera selectors finns. <code>".product-description"</code>, <code>"h1"</code> är säkra.</p>
+
+    <h2>Validera ditt schema</h2>
+
+    <ol>
+      <li><a href="https://validator.schema.org/" rel="noopener" target="_blank">validator.schema.org</a> — strikt validation av Schema.org-spec</li>
+      <li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Google Rich Results Test</a> — visar om Google ser ditt schema som rich-result-eligible</li>
+      <li>Eller använd <a href="/">vår SEO-checker</a> — den listar alla schema-typer på en URL och flaggar fel</li>
+    </ol>
+
+    <h2>Vad du absolut inte ska göra</h2>
+
+    <ul>
+      <li>Inte lägg in <code>Service</code> eller <code>LocalBusiness</code> på en e-handelsbutik — det är för konsulttjänster</li>
+      <li>Inte använd <code>Article</code> på produktsidor</li>
+      <li>Inte hårdkoda priser eller ratings — använd Liquid-variabler</li>
+      <li>Inte glöm <code>@id</code> — det gör att schemas kan kopplas ihop</li>
+    </ul>
+
+    <div class="author-card">
+      <div class="av">ND</div>
+      <div>
+        <h4>Niklas Dahlquist</h4>
+        <p>VD och grundare på <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter</a>. Har implementerat schema på 150+ Shopify-butiker. <a href="https://www.linkedin.com/in/niklasdahlquist/" rel="noopener">LinkedIn</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <h4>Shopify SEO</h4>
+    <p>Gratis SEO-checker och guider för Shopify-butiker.</p>
+    <p style="margin-top:8px"><a href="/">Hem</a> &middot; <a href="/#tool">Kör SEO-check</a> &middot; <a href="/llms.txt">llms.txt</a></p>
+    <p style="margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.4)">© 2026 Shopify SEO &middot; Drivs av <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter AB</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

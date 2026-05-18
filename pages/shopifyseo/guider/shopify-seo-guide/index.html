@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopify SEO 2026 — komplett guide för svenska butiker | Shopify SEO</title>
+<meta name="description" content="Komplett 2026-guide för Shopify SEO: theme-baserad SEO, Liquid-tweaks, schema, performance, Shopify Markets, hreflang och technical SEO. Med kod-exempel.">
+<link rel="canonical" href="https://shopifyseo.se/guider/shopify-seo-guide/">
+<meta property="og:title" content="Shopify SEO 2026 — komplett guide för svenska butiker">
+<meta property="og:description" content="Pillar guide om Shopify SEO: theme, schema, performance, Shopify Markets, hreflang. Med kod-exempel.">
+<meta property="og:url" content="https://shopifyseo.se/guider/shopify-seo-guide/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Niklas Dahlquist">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://shopifyseo.se/guider/shopify-seo-guide/#article",
+  "headline": "Shopify SEO 2026 — komplett guide för svenska butiker",
+  "description": "Pillar guide om Shopify SEO: theme-baserad SEO, Liquid-tweaks, schema, performance, Shopify Markets, hreflang.",
+  "url": "https://shopifyseo.se/guider/shopify-seo-guide/",
+  "datePublished": "2026-05-18",
+  "dateModified": "2026-05-18",
+  "inLanguage": "sv-SE",
+  "proficiencyLevel": "Intermediate",
+  "author": {
+    "@type": "Person",
+    "name": "Niklas Dahlquist",
+    "jobTitle": "VD, Dahlquist E-handelskonsulter",
+    "url": "https://dahlquist.se/om-oss",
+    "sameAs": "https://www.linkedin.com/in/niklasdahlquist/"
+  },
+  "publisher": { "@id": "https://shopifyseo.se/#publisher" },
+  "image": "https://shopifyseo.se/og-shopify-seo-guide.jpg",
+  "articleSection": ["Shopify", "SEO", "Tekniskt SEO"],
+  "keywords": "Shopify SEO, Shopify Plus SEO, Liquid SEO, Shopify schema, Shopify Markets"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Hem", "item": "https://shopifyseo.se/"},
+    {"@type": "ListItem", "position": 2, "name": "Guider", "item": "https://shopifyseo.se/#guider"},
+    {"@type": "ListItem", "position": 3, "name": "Shopify SEO 2026 — komplett guide", "item": "https://shopifyseo.se/guider/shopify-seo-guide/"}
+  ]
+}
+</script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1f2e;background:#fafbfc;line-height:1.7}
+  a{color:#5e3bff;text-decoration:none}a:hover{text-decoration:underline}
+  header{background:#fff;border-bottom:1px solid #e3e8ef;padding:14px 0}
+  .top{max-width:780px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:800;color:#0d1f3c}.brand span{color:#5e3bff}
+  .container{max-width:780px;margin:0 auto;padding:0 24px}
+  article{padding:48px 0}
+  .breadcrumb{font-size:.85rem;color:#6b7280;margin-bottom:24px}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin-bottom:14px}
+  .byline{font-size:.9rem;color:#6b7280;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #e3e8ef}
+  .lead{font-size:1.2rem;color:#3b4858;margin-bottom:32px;font-weight:500}
+  h2{font-size:1.6rem;font-weight:700;color:#0d1f3c;margin:48px 0 16px;line-height:1.25}
+  h3{font-size:1.2rem;font-weight:700;color:#0d1f3c;margin:32px 0 10px}
+  p{margin-bottom:16px;color:#3b4858}
+  ul,ol{margin:0 0 20px 24px;color:#3b4858}
+  li{margin-bottom:8px}
+  code{background:#f3efff;color:#4a2eef;padding:2px 6px;border-radius:4px;font-family:'SF Mono','Menlo',monospace;font-size:.92em}
+  pre{background:#1a1530;color:#e9e3ff;padding:18px 22px;border-radius:10px;overflow-x:auto;margin:20px 0;font-family:'SF Mono','Menlo',monospace;font-size:.88rem;line-height:1.55}
+  pre code{background:none;color:inherit;padding:0;font-size:inherit}
+  blockquote{border-left:3px solid #5e3bff;padding:8px 0 8px 20px;margin:24px 0;color:#4a5568;font-style:italic}
+  .toc{background:#fff;border:1px solid #e3e8ef;border-radius:10px;padding:20px 24px;margin:32px 0}
+  .toc h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:#6b7280;margin-bottom:10px;font-weight:700}
+  .toc ol{margin:0;padding-left:18px}
+  .toc li{margin-bottom:4px}
+  .toc a{color:#1a1f2e;font-size:.95rem}
+  .toc a:hover{color:#5e3bff}
+  .source-note{background:#f3efff;border-left:3px solid #5e3bff;padding:14px 18px;border-radius:4px;margin:24px 0;font-size:.92rem}
+  .source-note strong{color:#4a2eef}
+  .source-note a{color:#4a2eef;font-weight:600}
+  footer{background:#1a1530;color:rgba(255,255,255,.72);padding:32px 0;font-size:.88rem;margin-top:64px}
+  footer .container{text-align:center}
+  footer h4{color:#fff;margin-bottom:8px}
+  footer a{color:#c6b8ff}
+  .author-card{background:#fff;border:1px solid #e3e8ef;border-radius:10px;padding:20px;display:flex;gap:16px;align-items:start;margin-top:48px}
+  .author-card .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#5e3bff,#9089b8);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0}
+  .author-card h4{font-size:1rem;color:#0d1f3c;margin-bottom:4px}
+  .author-card p{font-size:.9rem;margin:0;color:#4a5568}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.94rem;background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e3e8ef}
+  th,td{padding:10px 14px;text-align:left;border-bottom:1px solid #f0f3f7}
+  th{background:#f8fafc;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#3b4858}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <a href="/" class="brand">Shopify <span>SEO</span></a>
+    <a href="/" style="font-size:.9rem">← Tillbaka</a>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="/">Hem</a> / <a href="/#guider">Guider</a> / Shopify SEO 2026</p>
+
+    <h1>Shopify SEO 2026 — komplett guide för svenska butiker</h1>
+
+    <p class="byline">Skriven av <strong>Niklas Dahlquist</strong>, VD på <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter</a> &middot; Publicerad 18 maj 2026 &middot; 12 min läsning</p>
+
+    <p class="lead">Den här guiden går igenom hur du faktiskt får en Shopify-butik att ranka — inte abstrakta SEO-koncept utan vad du konkret behöver göra i Liquid-koden, theme-inställningarna och Shopify Admin. Med fokus på 2026-uppdateringar (Cache Components-tänk även för themes, Speakable, INP).</p>
+
+    <div class="toc">
+      <h4>I den här guiden</h4>
+      <ol>
+        <li><a href="#fundament">Shopifys SEO-fundament — vad du får av plattformen</a></li>
+        <li><a href="#title-meta">Title-tag och meta description per produktyp</a></li>
+        <li><a href="#schema">Schema som faktiskt funkar på Shopify</a></li>
+        <li><a href="#liquid">Liquid-tweaks: 7 ändringar i theme.liquid</a></li>
+        <li><a href="#performance">Performance — vad Shopify ger gratis och vad du måste fixa</a></li>
+        <li><a href="#markets">Shopify Markets, hreflang och multi-currency SEO</a></li>
+        <li><a href="#technical">Technical SEO: robots, sitemap, kanonisering</a></li>
+        <li><a href="#checklist">Pre-lansering checklist</a></li>
+      </ol>
+    </div>
+
+    <h2 id="fundament">1. Shopifys SEO-fundament — vad du får av plattformen</h2>
+    <p>Shopify levererar ett antal SEO-grunder out-of-the-box som man inte behöver bygga själv:</p>
+    <ul>
+      <li>Mobile-first responsive themes som standard</li>
+      <li>HTTPS via free SSL (krävs för Google sedan 2018)</li>
+      <li>Automatisk <code>sitemap.xml</code> på <code>/sitemap.xml</code></li>
+      <li>Automatisk <code>robots.txt</code> som blockerar checkout, account, sökresultat</li>
+      <li>Native canonical-tags på alla produktsidor</li>
+      <li>Server-side rendering — ingen JavaScript-render-cost för Googlebot</li>
+      <li>CDN via Shopifys eget Fastly-baserade nätverk</li>
+    </ul>
+    <p>Det här är fundament som tar Magento/WooCommerce-butiker ofta veckor att konfigurera. Med Shopify har du det på dag 1.</p>
+
+    <div class="source-note"><strong>Värd att veta:</strong> Shopify har ändrat sin standard-robots.txt flera gånger. Den blockerar nu <code>/policies/</code>, <code>/cart</code>, <code>/account*</code>, <code>/checkout/</code>, <code>/search</code> och <code>/*?*</code>-parametrar. Vill du anpassa, redigera <code>robots.txt.liquid</code> i Shopify Admin (Themes &rarr; Edit code) — se <a href="https://shopify.dev/docs/storefronts/themes/seo/robots-txt" rel="noopener">Shopify-docs</a>.</div>
+
+    <h2 id="title-meta">2. Title-tag och meta description per produktyp</h2>
+    <p>Shopify themes använder <code>{{ page_title }}</code> och <code>{{ page_description }}</code> i <code>&lt;title&gt;</code> respektive <code>&lt;meta&gt;</code>-taggar. För varje sidtyp finns en specifik strategi:</p>
+
+    <table>
+      <thead><tr><th>Sidtyp</th><th>Title-mönster</th><th>Längd-mål</th></tr></thead>
+      <tbody>
+        <tr><td>Produkt</td><td><code>{Produktnamn} | {Varumärke}</code></td><td>50–60 chars</td></tr>
+        <tr><td>Kollektion</td><td><code>{Kollektion} — köp online | {Brand}</code></td><td>45–60</td></tr>
+        <tr><td>Blog post</td><td><code>{Title} | {Blog-namn}</code></td><td>50–65</td></tr>
+        <tr><td>Statiska sidor</td><td>Egen, focus keyword + brand</td><td>40–60</td></tr>
+      </tbody>
+    </table>
+
+    <p>För svenska butiker: använd å, ä, ö normalt — Google har stöttat svenska tecken sedan tidernas begynnelse. Det du <em>inte</em> ska göra är att förlita dig på engelska titles om dina kunder är svenska.</p>
+
+    <h3>Per-produkt meta i Liquid</h3>
+    <pre><code>&lt;title&gt;
+  {%- if template contains 'product' -%}
+    {{ product.title }} | {{ shop.name }}
+  {%- elsif template contains 'collection' and collection.title -%}
+    {{ collection.title }} — köp online | {{ shop.name }}
+  {%- else -%}
+    {{ page_title }}
+  {%- endif -%}
+&lt;/title&gt;</code></pre>
+
+    <h2 id="schema">3. Schema som faktiskt funkar på Shopify</h2>
+    <p>Många Shopify-themes har grundläggande JSON-LD i sin <code>theme.liquid</code>, men det är ofta:</p>
+    <ul>
+      <li>Föråldrat (Schema.org-spec har ändrats)</li>
+      <li>Duplicate (theme + apps lägger samma schema)</li>
+      <li>Otomatchat (theme har felaktig logik för B2B-prissättning)</li>
+    </ul>
+
+    <p>De fem JSON-LD-typer en svensk Shopify-butik behöver:</p>
+    <ol>
+      <li><strong>Organization</strong> (sitewide, i <code>theme.liquid</code>) — med <code>address</code>, <code>contactPoint</code>, <code>sameAs</code> till sociala konton, <code>logo</code>, <code>foundingDate</code>.</li>
+      <li><strong>Product</strong> (på produktsidor) — med <code>offers</code> (priceCurrency: SEK, availability, priceValidUntil), <code>brand</code>, <code>aggregateRating</code> om du har reviews-app, <code>image</code>-array.</li>
+      <li><strong>BreadcrumbList</strong> (kollektion + produkt) — kritisk för Googles breadcrumb rich result.</li>
+      <li><strong>FAQPage</strong> (på sidor med FAQ-sektion) — använd det <em>inte</em> på produktsidor (för konflikt med Product).</li>
+      <li><strong>WebSite</strong> med <code>SearchAction</code> (sitewide) — ger Sitelinks Search Box i SERP.</li>
+    </ol>
+
+    <div class="source-note"><strong>Gemensamt fel:</strong> Att lägga både <code>Product</code>- och separat <code>Review</code>-schema med samma rating för samma produkt → duplicate <code>AggregateRating</code> → Google ignorerar båda. Konsolidera in <code>aggregateRating</code> i Product-schemat. Se separat guide: <a href="/guider/shopify-schema/">Schema för Shopify-butiker</a>.</div>
+
+    <h2 id="liquid">4. Liquid-tweaks: 7 ändringar i theme.liquid</h2>
+    <p>Här är de sju Liquid-ändringar som ger störst SEO-effekt på en standard-Shopify-theme:</p>
+
+    <h3>1. Canonical alltid satt</h3>
+    <pre><code>&lt;link rel="canonical" href="{{ canonical_url }}"&gt;</code></pre>
+
+    <h3>2. Open Graph komplett</h3>
+    <pre><code>&lt;meta property="og:title" content="{{ page_title | escape }}"&gt;
+&lt;meta property="og:description" content="{{ page_description | escape }}"&gt;
+&lt;meta property="og:url" content="{{ canonical_url }}"&gt;
+&lt;meta property="og:image" content="{{ page_image | img_url: '1200x630' }}"&gt;
+&lt;meta property="og:locale" content="sv_SE"&gt;</code></pre>
+
+    <h3>3. Alt-text på produktbilder via Liquid</h3>
+    <pre><code>{% for image in product.images %}
+  &lt;img src="{{ image | img_url: '600x600' }}"
+       alt="{{ image.alt | default: product.title }}"
+       width="600" height="600"
+       loading="lazy" decoding="async"&gt;
+{% endfor %}</code></pre>
+
+    <h3>4. Preload critical font</h3>
+    <pre><code>&lt;link rel="preload" as="font" type="font/woff2"
+      href="{{ 'inter-var.woff2' | asset_url }}" crossorigin&gt;</code></pre>
+
+    <h3>5. Hreflang om du säljer i flera marknader (via Shopify Markets)</h3>
+    <pre><code>{% for locale in shop.published_locales %}
+  &lt;link rel="alternate"
+        hreflang="{{ locale.iso_code }}"
+        href="{{ canonical_url | replace: shop.url, '' | prepend: locale.root_url }}"&gt;
+{% endfor %}
+&lt;link rel="alternate" hreflang="x-default" href="{{ canonical_url }}"&gt;</code></pre>
+
+    <h3>6. Bort med duplicate H1 i themes</h3>
+    <p>Många themes har <code>&lt;h1&gt;{{ shop.name }}&lt;/h1&gt;</code> i headern på alla sidor + <code>&lt;h1&gt;{{ product.title }}&lt;/h1&gt;</code> på produktsidor. Ändra header-H1 till H2 eller en <code>&lt;p&gt;</code> med korrekt styling.</p>
+
+    <h3>7. Speakable för voice/AI</h3>
+    <pre><code>{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".product-description", "h1"]
+  }
+}</code></pre>
+
+    <h2 id="performance">5. Performance — vad Shopify ger gratis och vad du måste fixa</h2>
+    <p>Shopify har förbättrat performance kraftigt 2024–2026. Out-of-the-box-fakta för en modern OS 2.0-theme:</p>
+    <ul>
+      <li>LCP typiskt 1.8–2.5s desktop (under Googles "Good"-tröskel på 2.5s)</li>
+      <li>CLS typiskt &lt;0.05 (Good = &lt;0.1)</li>
+      <li>INP typiskt &lt;200ms (Good = &lt;200ms)</li>
+    </ul>
+    <p>Men: appar förstör allt. En typisk Shopify-butik har 10–15 appar och varje app som lägger till sin <code>&lt;script&gt;</code> i theme-headern ökar TBT med 50–200ms.</p>
+
+    <h3>Performance-arbete prioriterat efter ROI</h3>
+    <ol>
+      <li><strong>Audita appar</strong> — Lighthouse → "Reduce unused JavaScript". Var brutal: app som ger &lt;5k SEK i månadsvärde men kostar 200ms TBT → byt eller bygga själv.</li>
+      <li><strong>Lazy-loada below-fold-bilder</strong> — <code>loading="lazy"</code> på allt utom hero. Native, ingen JS behövs.</li>
+      <li><strong>Preconnect till tre kritiska domains</strong> — Shopifys CDN, Google Tag Manager om du kör det, font-providers.</li>
+      <li><strong>Defer GTM</strong> via <code>requestIdleCallback</code> istället för synkront i headern.</li>
+      <li><strong>Använd Shopify <code>img_url</code></strong> med specifika storlekar — inte <code>image | img_url</code> utan parameter (då serverar Shopify originalstorleken).</li>
+    </ol>
+
+    <h2 id="markets">6. Shopify Markets, hreflang och multi-currency SEO</h2>
+    <p>Shopify Markets (lansering 2021, breddat 2024) är Shopifys lösning för multi-market e-handel. Den hanterar:</p>
+    <ul>
+      <li>Lokala valutor per marknad (priser konverteras automatiskt)</li>
+      <li>Lokala betalmetoder per marknad (Klarna i SE, iDEAL i NL, etc.)</li>
+      <li>Lokal frakt och tull</li>
+      <li>Geo-detection med opt-in redirect</li>
+      <li>Per-marknad subdomains, subpaths eller TLD:er</li>
+    </ul>
+
+    <p>För SEO: använd <strong>subpaths</strong> (<code>/se/</code>, <code>/no/</code>, <code>/fi/</code>) snarare än subdomains eller TLD:er om du inte har stora budgetar för var marknad. Subpaths ärver domain authority från huvuddomänen.</p>
+
+    <h2 id="technical">7. Technical SEO: robots, sitemap, kanonisering</h2>
+    <h3>Robots.txt</h3>
+    <p>Shopify auto-genererar denna. Anpassa via <code>robots.txt.liquid</code> i theme — vanligaste skälen är att lägga till AI search bot-tillåtelser (<code>GPTBot</code>, <code>PerplexityBot</code>, <code>ClaudeBot</code>):</p>
+    <pre><code>{% for group in robots.default_groups %}
+  {{- group.user_agent }}
+  {%- for rule in group.rules -%}
+    {{ rule }}
+  {%- endfor -%}
+{% endfor %}
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: {{ shop.url }}/sitemap.xml</code></pre>
+
+    <h3>Sitemap.xml</h3>
+    <p>Shopify ger en automatisk <code>sitemap.xml</code> som sub-sitemaps för produkter, kollektioner, sidor och blog posts. Du kan inte editera den direkt — Shopify uppdaterar den automatiskt när du publicerar nytt innehåll.</p>
+
+    <h3>Kanonisering</h3>
+    <p>Shopify default: <code>{{ canonical_url }}</code> i theme.liquid. Default är korrekt på 99% av sidor. Undantag: filter-URLer (<code>?filter.v.price.gte=100</code>) får canonical till bas-kollektionen — bra.</p>
+
+    <h2 id="checklist">8. Pre-lansering checklist</h2>
+    <ul>
+      <li>☐ <strong>SEO-check</strong>: kör <a href="/">vårt verktyg</a> på 5 viktigaste sidor (hem, top kollektion, top produkt, kontakt, blog).</li>
+      <li>☐ <strong>301-redirects</strong>: skicka redirects från gamla URL:er via Shopify Admin → URL Redirects.</li>
+      <li>☐ <strong>GSC sitemap-submit</strong>: <code>https://din-domän.se/sitemap.xml</code>.</li>
+      <li>☐ <strong>Bing Webmaster + IndexNow</strong>: snabbare indexering hos Bing/Yandex.</li>
+      <li>☐ <strong>Cookiebanner-checks</strong>: säkerställ att Cookiebot/OneTrust inte blockerar GA4 eller GTM från att samla data.</li>
+      <li>☐ <strong>GA4 + GSC kopplade</strong>: gå GSC → Settings → Crawl statistics för att se Googlebot-trafik.</li>
+      <li>☐ <strong>llms.txt</strong> för AI search visibility.</li>
+    </ul>
+
+    <div class="author-card">
+      <div class="av">ND</div>
+      <div>
+        <h4>Niklas Dahlquist</h4>
+        <p>VD och grundare på <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter</a> — svensk Shopify Selected Partner sedan 2016. Har lett 150+ Shopify-projekt i Norden. <a href="https://www.linkedin.com/in/niklasdahlquist/" rel="noopener">LinkedIn</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <h4>Shopify SEO</h4>
+    <p>Gratis SEO-checker och guider för Shopify-butiker.</p>
+    <p style="margin-top:8px"><a href="/">Hem</a> &middot; <a href="/#tool">Kör SEO-check</a> &middot; <a href="/llms.txt">llms.txt</a></p>
+    <p style="margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.4)">© 2026 Shopify SEO &middot; Drivs av <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter AB</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

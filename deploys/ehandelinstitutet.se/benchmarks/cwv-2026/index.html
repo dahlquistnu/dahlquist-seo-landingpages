@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Web Vitals för svenska Shopify- och Magento-butiker 2026 — metodikrapport | E-handelsinstitutet</title>
+<meta name="description" content="Metodikrapport för kommande branschmätning av Core Web Vitals (LCP, INP, CLS) på topp 200 svenska e-handlare. Förklarar urval, datakällor och hur butiker kan delta anonymt.">
+<link rel="canonical" href="https://ehandelinstitutet.se/benchmarks/cwv-2026/">
+<meta property="og:title" content="Core Web Vitals för svenska e-handlare 2026 — metodikrapport">
+<meta property="og:description" content="Metodikrapport för branschmätning av LCP, INP, CLS på 200 svenska e-handlare.">
+<meta property="og:url" content="https://ehandelinstitutet.se/benchmarks/cwv-2026/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "https://ehandelinstitutet.se/benchmarks/cwv-2026/#article",
+  "headline": "Core Web Vitals för svenska Shopify- och Magento-butiker 2026 — metodikrapport",
+  "description": "Metodik och dataspecifikation för branschmätning av Core Web Vitals på 200 svenska e-handlare.",
+  "url": "https://ehandelinstitutet.se/benchmarks/cwv-2026/",
+  "datePublished": "2026-05-18",
+  "dateModified": "2026-05-18",
+  "inLanguage": "sv-SE",
+  "author": { "@id": "https://ehandelinstitutet.se/#publisher" },
+  "publisher": { "@id": "https://ehandelinstitutet.se/#publisher" },
+  "about": [
+    {"@type": "Thing", "name": "Core Web Vitals"},
+    {"@type": "Thing", "name": "E-handel"},
+    {"@type": "Thing", "name": "Svensk e-handel"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Core Web Vitals för svenska e-handlare 2026 (kommande)",
+  "description": "Kvartalsvis mätning av LCP, INP och CLS på topp 200 svenska e-handelssajter, brutet per plattform (Shopify, Shopify Plus, Magento, WooCommerce, Centra, Litium, Wikinggruppen).",
+  "url": "https://ehandelinstitutet.se/benchmarks/cwv-2026/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": { "@id": "https://ehandelinstitutet.se/#publisher" },
+  "datePublished": "2026-08-01",
+  "temporalCoverage": "2026-Q3",
+  "spatialCoverage": { "@type": "Place", "name": "Sverige" },
+  "keywords": ["Core Web Vitals", "LCP", "INP", "CLS", "Svensk e-handel", "Shopify", "Magento"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Hem", "item": "https://ehandelinstitutet.se/"},
+    {"@type": "ListItem", "position": 2, "name": "Benchmarks", "item": "https://ehandelinstitutet.se/benchmarks/"},
+    {"@type": "ListItem", "position": 3, "name": "Core Web Vitals 2026", "item": "https://ehandelinstitutet.se/benchmarks/cwv-2026/"}
+  ]
+}
+</script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Charter',Georgia,serif;color:#1a1f2e;background:#fafaf7;line-height:1.75}
+  a{color:#b8420e;text-decoration:none}a:hover{text-decoration:underline}
+  header{background:#fff;border-bottom:1px solid #e3e0d6;padding:18px 0}
+  .top{max-width:720px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;font-family:-apple-system,sans-serif}
+  .brand{font-weight:800;color:#1a1530}.brand em{color:#b8420e;font-style:normal}
+  .container{max-width:720px;margin:0 auto;padding:0 24px}
+  article{padding:48px 0}
+  .breadcrumb{font-size:.85rem;color:#6b7280;margin-bottom:24px;font-family:-apple-system,sans-serif}
+  .eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#b8420e;font-weight:700;margin-bottom:8px;font-family:-apple-system,sans-serif}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;color:#1a1530;line-height:1.15;margin-bottom:14px;letter-spacing:-.02em}
+  .byline{font-size:.9rem;color:#6b7280;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #e3e0d6;font-family:-apple-system,sans-serif}
+  .lead{font-size:1.2rem;color:#3b4858;margin-bottom:32px;font-weight:500;font-style:italic}
+  h2{font-size:1.55rem;font-weight:700;color:#1a1530;margin:44px 0 16px;letter-spacing:-.01em;font-family:-apple-system,sans-serif}
+  h3{font-size:1.2rem;font-weight:700;color:#1a1530;margin:28px 0 10px;font-family:-apple-system,sans-serif}
+  p{margin-bottom:16px;color:#3b4858}
+  ul,ol{margin:0 0 20px 22px;color:#3b4858}
+  li{margin-bottom:8px}
+  code{background:#f0ebd8;color:#7c3008;padding:2px 6px;border-radius:4px;font-family:'SF Mono','Menlo',monospace;font-size:.92em}
+  .callout{background:#fff;border-left:3px solid #b8420e;padding:18px 22px;border-radius:4px;margin:24px 0;font-size:.96rem}
+  .callout strong{color:#7c3008}
+  .pending{background:#fef3c7;border-left:3px solid #d97706;padding:14px 18px;border-radius:4px;margin:24px 0;font-family:-apple-system,sans-serif;font-size:.95rem}
+  .pending strong{color:#92400e}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.95rem;background:#fff;border:1px solid #e3e0d6;font-family:-apple-system,sans-serif}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid #e3e0d6}
+  th{background:#f5f1e8;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#3b4858}
+  footer{background:#1a1530;color:rgba(255,255,255,.72);padding:32px 0;font-size:.88rem;margin-top:64px;font-family:-apple-system,sans-serif}
+  footer .container{text-align:center}
+  footer h4{color:#fff;margin-bottom:8px}
+  footer a{color:#ffd0b0}
+  .signup-card{background:#1a1530;color:#fff;padding:28px;border-radius:8px;margin:32px 0;font-family:-apple-system,sans-serif}
+  .signup-card h3{color:#ffb88c;margin-bottom:8px}
+  .signup-card p{color:rgba(255,255,255,.85)}
+  .signup-card a{color:#ffd0b0;font-weight:600}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <a href="/" class="brand">E-handels<em>institutet</em></a>
+    <a href="/" style="font-size:.9rem">← Tillbaka</a>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="/">Hem</a> / <a href="/benchmarks/">Benchmarks</a> / Core Web Vitals 2026</p>
+
+    <p class="eyebrow">Benchmark — metodikrapport · Kommande Q3 2026</p>
+    <h1>Core Web Vitals för svenska Shopify- och Magento-butiker 2026 — metodikrapport</h1>
+
+    <p class="byline">Publicerad 18 maj 2026 av redaktionen för E-handelsinstitutet</p>
+
+    <p class="lead">Den här rapporten beskriver metoden för en branschmätning av Core Web Vitals (LCP, INP, CLS) på topp 200 svenska e-handlare som vi planerar att publicera under Q3 2026. Vi publicerar metoden i förväg så att butiker, plattformsleverantörer och byråer kan granska den och delta i datainsamlingen anonymt.</p>
+
+    <div class="pending"><strong>Status:</strong> Datainsamling pågår. Slutrapport publiceras 1 augusti 2026. Anmäl er butik för att delta anonymt — se sista sektionen.</div>
+
+    <h2>Varför den här rapporten</h2>
+
+    <p>Det finns ingen offentlig benchmark för Core Web Vitals brutet per plattform i Sverige idag. Google publicerar globala CrUX-data, men deras aggregerade siffror säger inget om huruvida en Shopify Plus-butik typiskt presterar bättre eller sämre än en Magento 2-butik i en svensk kontext — med svensk frakt, Klarna-integration och de specifika appar svenska butiker brukar köra.</p>
+
+    <p>Den här rapporten ger svar på fem konkreta frågor:</p>
+
+    <ol>
+      <li>Vilka är median- och p75-värden för LCP, INP, CLS hos svenska e-handlare uppdelat per plattform?</li>
+      <li>Hur stor är spridningen inom samma plattform (är "Shopify Plus är snabbt" alltid sant)?</li>
+      <li>Vilka appar/widgets korrelerar starkast med dåligt INP?</li>
+      <li>Hur har siffrorna förändrats sedan motsvarande mätning 2024?</li>
+      <li>Vilka butiker presterar exceptionellt bra och vad gör de som andra inte gör?</li>
+    </ol>
+
+    <h2>Urvalskriterier</h2>
+
+    <p>Vi mäter 200 butiker enligt följande kriterier:</p>
+
+    <ul>
+      <li><strong>Svensk e-handel:</strong> .se-domän ELLER engelsk/internationell domän med <code>geo:SE</code>-meta eller hreflang sv-SE</li>
+      <li><strong>Omsättning:</strong> uppskattat &gt;5 MSEK/år enligt SimilarWeb traffic + bransch-benchmark</li>
+      <li><strong>Plattformsfördelning:</strong> kvoterat så att Shopify, Shopify Plus, Magento 2, WooCommerce, Centra, Litium, Wikinggruppen och övriga var och en får 20–30 butiker (för statistiskt signifikant jämförelse)</li>
+      <li><strong>Plattformsdetektion:</strong> via Wappalyzer + manuell verifiering av HTML-signaturer</li>
+    </ul>
+
+    <h2>Datakällor</h2>
+
+    <table>
+      <thead><tr><th>Källa</th><th>Vad ger den</th><th>Datatyp</th></tr></thead>
+      <tbody>
+        <tr><td>Google CrUX</td><td>Field data (riktig användarmätning) per origin, 28-dagars rolling</td><td>Primär</td></tr>
+        <tr><td>Lighthouse via PSI API</td><td>Lab data, mer detaljer om vad som orsakar dåliga värden</td><td>Sekundär</td></tr>
+        <tr><td>Wappalyzer</td><td>Plattformsdetektion + listning av installerade appar</td><td>Plattform</td></tr>
+        <tr><td>SimilarWeb (free tier)</td><td>Trafik-estimate för att kvalificera "omsättning &gt;5 MSEK"</td><td>Urval</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Mätpunkter</h2>
+
+    <h3>Per butik mäter vi:</h3>
+    <ul>
+      <li>LCP (Largest Contentful Paint) — p75 mobile + desktop</li>
+      <li>INP (Interaction to Next Paint) — p75 mobile</li>
+      <li>CLS (Cumulative Layout Shift) — p75</li>
+      <li>FCP, TTFB, TBT (kompletterande lab-data)</li>
+      <li>Sidstorlek (totalbyte)</li>
+      <li>Antal third-party scripts</li>
+      <li>Antal installerade Shopify/Magento-appar (där applicerbart)</li>
+    </ul>
+
+    <h3>Per plattform aggregerar vi:</h3>
+    <ul>
+      <li>Median och p75 av varje CWV-metrik</li>
+      <li>Spridning (kvartilavstånd)</li>
+      <li>Andel butiker över Googles "Good"-tröskel per metric (LCP &lt;2.5s, INP &lt;200ms, CLS &lt;0.1)</li>
+      <li>Korrelation mellan antal third-party scripts och INP</li>
+    </ul>
+
+    <h2>Vad rapporten inte gör</h2>
+
+    <p>Vi vill vara transparenta med vad metoden <em>inte</em> kan visa:</p>
+
+    <ul>
+      <li><strong>Inte kausalitet.</strong> Att Shopify Plus-butiker har låg median-LCP betyder inte att Plus orsakar låg LCP. Det kan bero på att Plus-kunder har större budgetar för optimering.</li>
+      <li><strong>Inte fullt urvalsrepresentativt.</strong> Med 200 butiker kan vi inte jämföra t.ex. "Magento 2 i fashion-vertikalen vs Magento 2 i industri" — för litet n per cell.</li>
+      <li><strong>Inte plattformsval-rekommendation.</strong> CWV är en av många faktorer i plattformsval. Vi mäter CWV — vi rekommenderar inte plattformar.</li>
+    </ul>
+
+    <h2>Anonymisering och dataetik</h2>
+
+    <p>I slutrapporten publiceras:</p>
+
+    <ul>
+      <li><strong>Aggregerade siffror per plattform</strong> (median, p25, p75, andel över "Good"-tröskel)</li>
+      <li><strong>De fem snabbaste butikerna per plattform</strong> med namn (positiv exponering, opt-in)</li>
+      <li><strong>"Anti-patterns"</strong> — vanliga konfigurationsfel utan att namnge specifika butiker</li>
+    </ul>
+
+    <p>Vi publicerar <em>inte</em>:</p>
+
+    <ul>
+      <li>Individuella butikers CWV-värden (utom de fem snabbaste per plattform som opt-in valt att synas)</li>
+      <li>Konsumentdata, kunddata eller orderdata</li>
+      <li>Skattnings- eller omsättningssiffror per butik</li>
+    </ul>
+
+    <h2>Tidsplan</h2>
+
+    <table>
+      <thead><tr><th>Vecka</th><th>Aktivitet</th></tr></thead>
+      <tbody>
+        <tr><td>v 20–22</td><td>Urval finaliseras, butiker kontaktas för opt-in</td></tr>
+        <tr><td>v 23–28</td><td>Datainsamling (CrUX, Lighthouse, Wappalyzer)</td></tr>
+        <tr><td>v 29–30</td><td>Analys + utkast</td></tr>
+        <tr><td>v 31</td><td>Peer review av tre branschpersoner</td></tr>
+        <tr><td>v 32 (1 aug)</td><td>Publicering</td></tr>
+      </tbody>
+    </table>
+
+    <div class="signup-card">
+      <h3>Vill du att din butik ska ingå?</h3>
+      <p style="margin-bottom:10px">Vi tar emot anmälningar fram till 15 juni 2026. Mejla <a href="mailto:redaktion@ehandelinstitutet.se">redaktion@ehandelinstitutet.se</a> med:</p>
+      <ul style="color:rgba(255,255,255,.85);margin-bottom:10px">
+        <li>Butikens domän</li>
+        <li>Plattform (Shopify, Shopify Plus, Magento 2, etc.)</li>
+        <li>Om du vill ingå anonymt eller med namn (om butiken hamnar bland topp 5 per plattform)</li>
+      </ul>
+      <p style="margin:0;color:rgba(255,255,255,.7);font-size:.88rem">Anmälan är gratis. Vi använder din data uteslutande för denna rapport och delar inte med tredje part.</p>
+    </div>
+
+    <h2>Tidigare mätningar och referenser</h2>
+
+    <ul>
+      <li>Google CrUX dashboard för Sverige — <a href="https://lookerstudio.google.com/" rel="noopener">lookerstudio.google.com</a> (filtrera på SE)</li>
+      <li>Web Almanac 2025 — global benchmark från HTTP Archive</li>
+      <li>Postnordstudien E-handel 2025 — för svensk e-handel-marknadsöverblick</li>
+    </ul>
+
+    <p class="callout"><strong>Tipsa oss:</strong> Vet du om en intressant svensk e-handel som presterar exceptionellt på CWV? Eller en plattformsleverantör som vill granska metoden? Mejla <a href="mailto:redaktion@ehandelinstitutet.se">redaktion@ehandelinstitutet.se</a>.</p>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <h4>E-handelsinstitutet</h4>
+    <p>Oberoende kunskapsplattform för svensk e-handel.</p>
+    <p style="margin-top:8px"><a href="/">Hem</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="mailto:redaktion@ehandelinstitutet.se">Kontakt</a></p>
+    <p style="margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.4)">© 2026 E-handelsinstitutet &middot; CC BY 4.0 &middot; Drivs av <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter AB</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

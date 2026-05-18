@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Migrera SEO till Shopify — 301-redirects och bevarade rankings | Shopify SEO</title>
+<meta name="description" content="Hur du migrerar från Magento, WooCommerce eller Wikinggruppen till Shopify utan att tappa SEO-rankings. 301-redirects, hreflang-bevarande, schema-mapping, sitemap-strategi.">
+<link rel="canonical" href="https://shopifyseo.se/guider/migrera-seo-shopify/">
+<meta property="og:title" content="Migrera SEO till Shopify — 301-redirects och bevarade rankings">
+<meta property="og:description" content="Praktisk checklista för att flytta SEO säkert vid plattformsbyte till Shopify.">
+<meta property="og:url" content="https://shopifyseo.se/guider/migrera-seo-shopify/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Niklas Dahlquist">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://shopifyseo.se/guider/migrera-seo-shopify/#article",
+  "headline": "Migrera SEO till Shopify — 301-redirects och bevarade rankings",
+  "description": "Komplett checklista för plattformsmigrering till Shopify utan SEO-tapp.",
+  "url": "https://shopifyseo.se/guider/migrera-seo-shopify/",
+  "datePublished": "2026-05-18",
+  "dateModified": "2026-05-18",
+  "inLanguage": "sv-SE",
+  "proficiencyLevel": "Advanced",
+  "author": {
+    "@type": "Person",
+    "name": "Niklas Dahlquist",
+    "jobTitle": "VD, Dahlquist E-handelskonsulter",
+    "url": "https://dahlquist.se/om-oss",
+    "sameAs": "https://www.linkedin.com/in/niklasdahlquist/"
+  },
+  "publisher": { "@id": "https://shopifyseo.se/#publisher" },
+  "articleSection": ["Migration", "SEO", "Shopify"],
+  "keywords": "Shopify migration, 301 redirect, plattformsbyte, Magento till Shopify, WooCommerce till Shopify"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Migrera SEO till Shopify utan ranking-tapp",
+  "description": "Process för att flytta SEO-rankings från en befintlig plattform till Shopify.",
+  "totalTime": "PT2W",
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"Inventera befintlig SEO","text":"Exportera alla rankings från GSC, listan över top 100 sidor efter trafik, alla externa backlinks via Ahrefs/Semrush. Skapa baseline-snapshot 30 dagar innan launch."},
+    {"@type":"HowToStep","position":2,"name":"Bygg URL-mapping","text":"Mappa varje gammal URL till en ny Shopify-URL. Använd standard-mönster: /collections/ för kategorier, /products/ för produkter, /pages/ för statiska sidor, /blogs/ för blog."},
+    {"@type":"HowToStep","position":3,"name":"Sätt upp 301-redirects i Shopify","text":"Använd Shopify Admin > URL Redirects eller importera via CSV. För komplexa pattern-redirects, använd Bulk Redirect-appar eller Shopify Function."},
+    {"@type":"HowToStep","position":4,"name":"Bevara on-page SEO","text":"Migrera title-tags, meta descriptions, H1, alt-texter och produktbeskrivningar EXAKT. Förändringar ska göras EFTER launch, inte i samband med."},
+    {"@type":"HowToStep","position":5,"name":"Submitta nya sitemaps","text":"När live: submit /sitemap.xml till GSC, ping via IndexNow, submit till Bing Webmaster."},
+    {"@type":"HowToStep","position":6,"name":"Monitorera 30 dagar","text":"Daglig kontroll av GSC Coverage report, 404-rapport, ranking-position för top 50 keywords. Korrigera akuta problem inom 48h."}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Hem", "item": "https://shopifyseo.se/"},
+    {"@type": "ListItem", "position": 2, "name": "Guider", "item": "https://shopifyseo.se/#guider"},
+    {"@type": "ListItem", "position": 3, "name": "Migrera SEO till Shopify", "item": "https://shopifyseo.se/guider/migrera-seo-shopify/"}
+  ]
+}
+</script>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1f2e;background:#fafbfc;line-height:1.7}
+  a{color:#5e3bff;text-decoration:none}a:hover{text-decoration:underline}
+  header{background:#fff;border-bottom:1px solid #e3e8ef;padding:14px 0}
+  .top{max-width:780px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:800;color:#0d1f3c}.brand span{color:#5e3bff}
+  .container{max-width:780px;margin:0 auto;padding:0 24px}
+  article{padding:48px 0}
+  .breadcrumb{font-size:.85rem;color:#6b7280;margin-bottom:24px}
+  h1{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;color:#0d1f3c;line-height:1.2;margin-bottom:14px}
+  .byline{font-size:.9rem;color:#6b7280;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #e3e8ef}
+  .lead{font-size:1.15rem;color:#3b4858;margin-bottom:32px;font-weight:500}
+  h2{font-size:1.5rem;font-weight:700;color:#0d1f3c;margin:44px 0 16px}
+  h3{font-size:1.15rem;font-weight:700;color:#0d1f3c;margin:28px 0 10px}
+  p{margin-bottom:16px;color:#3b4858}
+  ul,ol{margin:0 0 20px 24px;color:#3b4858}
+  li{margin-bottom:8px}
+  code{background:#f3efff;color:#4a2eef;padding:2px 6px;border-radius:4px;font-family:'SF Mono','Menlo',monospace;font-size:.92em}
+  pre{background:#1a1530;color:#e9e3ff;padding:18px 22px;border-radius:10px;overflow-x:auto;margin:20px 0;font-family:'SF Mono','Menlo',monospace;font-size:.86rem;line-height:1.55}
+  pre code{background:none;color:inherit;padding:0;font-size:inherit}
+  .source-note{background:#f3efff;border-left:3px solid #5e3bff;padding:14px 18px;border-radius:4px;margin:24px 0;font-size:.92rem}
+  .source-note strong{color:#4a2eef}
+  .warn-note{background:#fef3c7;border-left:3px solid #d97706;padding:14px 18px;border-radius:4px;margin:24px 0;font-size:.92rem}
+  .warn-note strong{color:#92400e}
+  .danger-note{background:#fee2e2;border-left:3px solid #dc2626;padding:14px 18px;border-radius:4px;margin:24px 0;font-size:.92rem}
+  .danger-note strong{color:#991b1b}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.94rem;background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e3e8ef}
+  th,td{padding:10px 14px;text-align:left;border-bottom:1px solid #f0f3f7}
+  th{background:#f8fafc;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#3b4858}
+  footer{background:#1a1530;color:rgba(255,255,255,.72);padding:32px 0;font-size:.88rem;margin-top:64px}
+  footer .container{text-align:center}
+  footer h4{color:#fff;margin-bottom:8px}
+  footer a{color:#c6b8ff}
+  .author-card{background:#fff;border:1px solid #e3e8ef;border-radius:10px;padding:20px;display:flex;gap:16px;align-items:start;margin-top:48px}
+  .author-card .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#5e3bff,#9089b8);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0}
+  .author-card h4{font-size:1rem;color:#0d1f3c;margin-bottom:4px}
+  .author-card p{font-size:.9rem;margin:0;color:#4a5568}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="top">
+    <a href="/" class="brand">Shopify <span>SEO</span></a>
+    <a href="/" style="font-size:.9rem">← Tillbaka</a>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="breadcrumb"><a href="/">Hem</a> / <a href="/#guider">Guider</a> / Migrera SEO till Shopify</p>
+
+    <h1>Migrera SEO till Shopify — 301-redirects och bevarade rankings</h1>
+
+    <p class="byline">Skriven av <strong>Niklas Dahlquist</strong> &middot; Publicerad 18 maj 2026 &middot; 10 min läsning</p>
+
+    <p class="lead">En plattformsmigrering är den största SEO-risken en e-handel någonsin tar. Gjort fel: 30–60% trafiktapp som tar månader att återhämta. Gjort rätt: 0–5% tillfälligt dipp som återhämtas på 4–8 veckor. Den här guiden är checklistan vi använt på 40+ migrationer från Magento, WooCommerce och Wikinggruppen till Shopify.</p>
+
+    <div class="danger-note"><strong>Innan du börjar:</strong> En migration är inte ett rebrand. Spara design-, copy- och kategoristruktur-ändringar till EFTER launch. Att göra allt på en gång gör det omöjligt att avgöra vad som orsakade ett trafiktapp.</div>
+
+    <h2>Den övergripande processen</h2>
+
+    <p>En typisk migration tar 8–14 veckor. Här är vad som händer SEO-mässigt i varje fas:</p>
+
+    <table>
+      <thead><tr><th>Fas</th><th>Veckor</th><th>SEO-aktiviteter</th></tr></thead>
+      <tbody>
+        <tr><td>1. Inventering</td><td>−6 till −4</td><td>Baseline-snapshot, URL-mapping, backlink-analys</td></tr>
+        <tr><td>2. Bygge</td><td>−4 till −1</td><td>Implementera schema, copy, alt-text, internal links</td></tr>
+        <tr><td>3. Test</td><td>−1</td><td>Stage-server SEO-audit, redirects-test</td></tr>
+        <tr><td>4. Launch</td><td>0</td><td>301-redirects live, sitemap submit, IndexNow ping</td></tr>
+        <tr><td>5. Monitoring</td><td>+1 till +4</td><td>Daily GSC checks, 404-rapport, korrigeringar</td></tr>
+        <tr><td>6. Optimering</td><td>+5 till +8</td><td>Återställa rankings, addressing content gaps</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Steg 1: Inventering (vecka −6 till −4)</h2>
+
+    <h3>Baseline-snapshot</h3>
+    <p>Exportera från Google Search Console:</p>
+    <ul>
+      <li>Search Analytics: <strong>top 500 keywords</strong> (clicks, impressions, position) — senaste 12 månaderna</li>
+      <li>Performance &rarr; Pages: <strong>top 200 URLs</strong> efter clicks</li>
+      <li>Coverage: alla indexerade URLs (Submitted, Indexed)</li>
+    </ul>
+
+    <p>Exportera från Ahrefs/Semrush/Moz:</p>
+    <ul>
+      <li>All <strong>referring domains</strong> med rank</li>
+      <li>Top 100 backlinks efter authority</li>
+      <li>Anchor text-distribution</li>
+    </ul>
+
+    <h3>URL-mapping</h3>
+    <p>Skapa en CSV med tre kolumner: <code>old_url</code>, <code>new_url</code>, <code>http_status</code>.</p>
+
+    <pre><code>old_url,new_url,http_status
+/produkt/skor-blå,/products/skor-bla,301
+/kategori/herr-skor,/collections/herr-skor,301
+/kontakt,/pages/kontakt,301
+/blog/post-1,/blogs/news/post-1,301
+/glömt-lösenord,,410  # gone</code></pre>
+
+    <p>Använd <strong>410 Gone</strong> för sidor som inte ska migreras alls (filtrerade collection-URLer, gamla kampanjsidor). Inte 404 — 410 säger till Google "permanent borta, sluta crawla".</p>
+
+    <h2>Steg 2: Bygge (vecka −4 till −1)</h2>
+
+    <h3>Migrera on-page SEO</h3>
+    <p>Migrera <strong>exakt</strong> följande från gamla plattformen:</p>
+    <ul>
+      <li>Title-tag per sida (om Shopify SEO-fält finns, fyll i; annars genereras automatiskt)</li>
+      <li>Meta description per sida</li>
+      <li>H1 (i produktnamn/kategorinamn)</li>
+      <li>Produktbeskrivningar — inklusive HTML-strukturering med H2, H3</li>
+      <li>Alt-text på alla bilder</li>
+      <li>Internal links inom innehåll</li>
+    </ul>
+
+    <div class="warn-note"><strong>Frestelsen:</strong> "Vi skriver om produkttexterna eftersom de gamla var dåliga." Gör det INTE i samband med migration. Vänta minst 4 veckor efter launch. Annars kan du inte avgöra om ranking-förändringen kommer från plattformsbytet eller innehållet.</div>
+
+    <h3>Schema, robots, sitemap</h3>
+    <p>Konfigurera dessa enligt vår <a href="/guider/shopify-schema/">schema-guide</a> och <a href="/guider/shopify-seo-guide/">pillar guide</a>.</p>
+
+    <h2>Steg 3: Test (vecka −1)</h2>
+
+    <p>Innan launch, kör på staging-environment:</p>
+    <ol>
+      <li><strong>Crawla med Screaming Frog</strong> — 0 broken links, 0 redirect chains &gt;1 hop, alla title/desc satta</li>
+      <li><strong>Verifiera redirect-CSV</strong> — testa minst 20 URLs slumpmässigt</li>
+      <li><strong>Schema validation</strong> via Google Rich Results Test på 5 typ-sidor</li>
+      <li><strong>Mobile-friendly test</strong> via Google PageSpeed Insights</li>
+      <li><strong>Hreflang-validation</strong> om multi-market</li>
+    </ol>
+
+    <h2>Steg 4: Launch (vecka 0)</h2>
+
+    <p>Launch-dagen, i ordning:</p>
+    <ol>
+      <li><strong>DNS-uppdatering</strong> peka root-domain till Shopify</li>
+      <li><strong>Aktivera 301-redirects</strong> — importera din mapping-CSV via Shopify Admin &rarr; URL Redirects, eller via en app som "Easy Redirects" / "SEOAnt"</li>
+      <li><strong>Verifiera redirects fungerar</strong> — kör 20 stickprov via <code>curl -I gamla-url</code></li>
+      <li><strong>Submit sitemap</strong> i Google Search Console för den nya egendomen</li>
+      <li><strong>Verifiera ny GSC property</strong> via DNS TXT-record eller HTML-fil-upload</li>
+      <li><strong>IndexNow ping</strong> för Bing/Yandex (snabbar upp re-crawl)</li>
+      <li><strong>Cookiebanner kontrollera</strong> — att den inte blockerar Googlebot från att se sidan</li>
+    </ol>
+
+    <pre><code># Verifiera 301-redirects via curl
+curl -sI https://din-domän.se/gammal-url/
+# Förvänta dig: HTTP/2 301
+# Location: https://din-domän.se/products/ny-url</code></pre>
+
+    <h2>Steg 5: Monitoring (vecka +1 till +4)</h2>
+
+    <p>Dagliga kontroller första 30 dagarna:</p>
+    <ul>
+      <li><strong>GSC Coverage</strong> — varje dag, leta efter "Submitted, not indexed" eller "Crawl anomaly"</li>
+      <li><strong>404-rapport</strong> — Shopify har inbyggd "Online Store &rarr; Navigation &rarr; URL redirects" som visar 404:or. Lägg redirect på 100% av icke-triviala</li>
+      <li><strong>Ranking-position</strong> för top 50 keywords via Ahrefs daily tracking</li>
+      <li><strong>Server-loggar</strong> — vad Googlebot crawlar (om Shopify Plus, via deras Pulsen/Datadog-integration)</li>
+    </ul>
+
+    <h3>Förväntat tappmönster</h3>
+    <p>Realistiska siffror för en välutförd migration:</p>
+    <ul>
+      <li><strong>Vecka 0–1:</strong> Trafiktapp 10–20% medan Google re-crawlar och processar redirects</li>
+      <li><strong>Vecka 2–3:</strong> Återhämtning till 80–90% av baseline</li>
+      <li><strong>Vecka 4–6:</strong> 95–100% av baseline</li>
+      <li><strong>Vecka 8+:</strong> Ofta uppåt p.g.a. snabbare site speed på Shopify vs. Magento/WC</li>
+    </ul>
+
+    <div class="danger-note"><strong>Om du tappat mer än 30% efter 2 veckor:</strong> något är fel. Vanligaste orsaker: 1) redirect-loops, 2) noindex-tag oavsiktligt på alla sidor, 3) robots.txt blockerar, 4) canonical pekar fel. Kör vår <a href="/">SEO-checker</a> på topp 20 URLs.</div>
+
+    <h2>Plattform-specifika gotchas</h2>
+
+    <h3>Från Magento (Adobe Commerce)</h3>
+    <ul>
+      <li>Magento använder ofta <code>.html</code>-suffix på URLer — Shopify gör inte det. Lägg till regex-redirect.</li>
+      <li>Category-URLer i Magento kan ha multiple parent (<code>/herr/skor/sneakers</code>). Shopify har bara <code>/collections/sneakers</code>. Konsolidera category-hierarki innan migration.</li>
+      <li>Magento layered navigation (filter-URLer) ska 410-as, inte migreras.</li>
+    </ul>
+
+    <h3>Från WooCommerce</h3>
+    <ul>
+      <li>WC kategori-URLer är ofta <code>/product-category/</code>. Mappa till <code>/collections/</code>.</li>
+      <li>WC har ibland <code>?attribute_pa_color=red</code>-URLer som indexerats. 410 alla.</li>
+      <li>WC's automatiska image-storlekar (<code>-300x300.jpg</code>) genererar 404:or efter migration. Inte ett SEO-problem men kan påverka image search.</li>
+    </ul>
+
+    <h3>Från Wikinggruppen</h3>
+    <ul>
+      <li>Wikinggruppen har ett egen URL-mönster som inte mappar 1:1 till Shopify. Kräver manuell mappning.</li>
+      <li>Wikinggruppen exporterar inte alltid alt-texter — verifiera manuellt.</li>
+      <li>Reviews i Wikinggruppen syns inte automatiskt på Shopify — exportera till Judge.me eller Yotpo via CSV.</li>
+    </ul>
+
+    <h2>Specifikt för svenska butiker</h2>
+    <ul>
+      <li>Hreflang sv-SE + x-default ska peka på samma URL för enbart-svenska butiker</li>
+      <li>Om du har en .se-domain — använd den. Inte .com om svenska är primärmarknad.</li>
+      <li>Kontrollera att Klarna/Swish redan är konfigurerat i Shopify Payments innan launch (inte SEO-fråga, men trafik kommer kasta sig direkt)</li>
+    </ul>
+
+    <div class="author-card">
+      <div class="av">ND</div>
+      <div>
+        <h4>Niklas Dahlquist</h4>
+        <p>VD och grundare på <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter</a> — har lett 40+ Shopify-migrationer. <a href="https://www.linkedin.com/in/niklasdahlquist/" rel="noopener">LinkedIn</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <h4>Shopify SEO</h4>
+    <p>Gratis SEO-checker och guider för Shopify-butiker.</p>
+    <p style="margin-top:8px"><a href="/">Hem</a> &middot; <a href="/#tool">Kör SEO-check</a> &middot; <a href="/llms.txt">llms.txt</a></p>
+    <p style="margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.4)">© 2026 Shopify SEO &middot; Drivs av <a href="https://dahlquist.se" rel="noopener">Dahlquist E-handelskonsulter AB</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
