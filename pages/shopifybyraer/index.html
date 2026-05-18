@@ -145,6 +145,10 @@
   .card-head{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:8px}
   .card h3{margin-bottom:0}
   .city{font-size:.78rem;color:#6b7280;background:#f0f6ff;padding:3px 9px;border-radius:99px;white-space:nowrap}
+  .cert{display:inline-flex;align-items:center;gap:5px;font-size:.74rem;font-weight:600;color:#15803d;background:#dcfce7;border:1px solid #86efac;padding:4px 10px;border-radius:99px;margin:8px 0 4px}
+  .cert.plus{color:#1e40af;background:#dbeafe;border-color:#93c5fd}
+  .cert.standard{color:#6b7280;background:#f3f4f6;border-color:#d1d5db}
+  .cert::before{content:'✓';font-weight:700}
   .tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
   .tag{font-size:.72rem;color:#0d1f3c;background:#e9eef5;padding:3px 8px;border-radius:4px;font-weight:500}
   .desc{font-size:.94rem;color:#4a5568;margin-bottom:14px;flex-grow:1}
@@ -240,6 +244,7 @@
             <h3><a href="https://carismar.com/" rel="noopener" target="_blank">Carismar</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert standard">Shopify Partner</span>
           <div class="tags">
             <span class="tag">Shopify Plus</span><span class="tag">D2C</span><span class="tag">Skandinavien</span>
           </div>
@@ -252,11 +257,12 @@
             <h3><a href="https://co-op.se/" rel="noopener" target="_blank">CO-OP Agency</a></h3>
             <span class="city">Stockholm / Göteborg</span>
           </div>
+          <span class="cert plus">Shopify Plus Partner</span>
           <div class="tags">
-            <span class="tag">Shopify Plus</span><span class="tag">B2B</span><span class="tag">Migrering</span>
+            <span class="tag">Shopify Plus</span><span class="tag">B2B</span><span class="tag">B2C</span><span class="tag">Migrering</span><span class="tag">ERP/CRM-integration</span>
           </div>
-          <p class="desc">En av de mest etablerade Shopify-specialisterna i Norden. Stark inom migrering från WooCommerce/Magento och större e-handelsprojekt med multi-market.</p>
-          <div class="card-foot"><span class="specialty">Migrering / Enterprise</span><a href="https://co-op.se/" rel="noopener" target="_blank">Besök →</a></div>
+          <p class="desc">En av de mest etablerade Shopify-byråerna i Norden. Stark inom migrering från WooCommerce/Magento, B2C/B2B-flöden på Shopify Plus, samt ERP- och CRM-integrationer. Tydlig nordisk närvaro med multi-market-erfarenhet.</p>
+          <div class="card-foot"><span class="specialty">Migrering / Enterprise / B2B+B2C</span><a href="https://co-op.se/" rel="noopener" target="_blank">Besök →</a></div>
         </article>
 
         <article class="card">
@@ -264,11 +270,12 @@
             <h3><a href="https://dahlquist.se/shopify-sverige" rel="noopener" target="_blank">Dahlquist E-handelskonsulter</a></h3>
             <span class="city">Uddevalla / Falkenberg</span>
           </div>
+          <span class="cert">Shopify Selected Partner sedan 2016</span>
           <div class="tags">
-            <span class="tag">Shopify Plus</span><span class="tag">B2B</span><span class="tag">ERP-integration</span><span class="tag">Magento</span>
+            <span class="tag">Shopify Plus</span><span class="tag">B2B</span><span class="tag">ERP-integration</span><span class="tag">Enterprise</span><span class="tag">Magento</span>
           </div>
-          <p class="desc">Shopify Selected Partner med dedikerat systemutvecklingsteam. Specialiserade på ERP-integrationer (Fortnox, Visma, Business Central) och komplexa B2B-flöden. Även Magento/Adobe Commerce.</p>
-          <div class="card-foot"><span class="specialty">B2B / ERP-integration</span><a href="https://dahlquist.se/shopify-sverige" rel="noopener" target="_blank">Besök →</a></div>
+          <p class="desc">Shopify Selected Partner med dedikerat systemutvecklingsteam. Djup specialisering på ERP-integrationer (Fortnox, Visma, Business Central, Pyramid, Jeeves, SAP) och komplexa B2B-flöden. Enterprise-projekt åt bland andra STIHL och SONAX. Även Magento/Adobe Commerce.</p>
+          <div class="card-foot"><span class="specialty">B2B / ERP / Enterprise</span><a href="https://dahlquist.se/shopify-sverige" rel="noopener" target="_blank">Besök →</a></div>
         </article>
 
         <article class="card">
@@ -276,6 +283,7 @@
             <h3><a href="https://www.growlyab.se/" rel="noopener" target="_blank">Growly</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert standard">Shopify Select Partner</span>
           <div class="tags">
             <span class="tag">Shopify</span><span class="tag">CRO</span><span class="tag">Performance Marketing</span>
           </div>
@@ -288,6 +296,7 @@
             <h3><a href="https://www.iggy.agency/" rel="noopener" target="_blank">Iggy Agency</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert standard">Shopify Partner</span>
           <div class="tags">
             <span class="tag">Shopify</span><span class="tag">Konverteringsoptimering</span>
           </div>
@@ -300,6 +309,7 @@
             <h3><a href="https://www.polarcape.com/" rel="noopener" target="_blank">Polarcape</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert plus">Shopify Plus Partner</span>
           <div class="tags">
             <span class="tag">Shopify Plus</span><span class="tag">B2B</span><span class="tag">Headless</span><span class="tag">Enterprise</span>
           </div>
@@ -312,6 +322,7 @@
             <h3><a href="https://www.stride.se/" rel="noopener" target="_blank">Stride</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert standard">Shopify Select Partner</span>
           <div class="tags">
             <span class="tag">Shopify Plus</span><span class="tag">B2B</span><span class="tag">Migrering</span>
           </div>
@@ -324,6 +335,7 @@
             <h3><a href="https://www.swivrr.se/" rel="noopener" target="_blank">Swivrr</a></h3>
             <span class="city">Online</span>
           </div>
+          <span class="cert standard">Shopify Partner</span>
           <div class="tags">
             <span class="tag">Shopify</span><span class="tag">SMB</span><span class="tag">Setup</span>
           </div>
@@ -336,6 +348,7 @@
             <h3><a href="https://tigerton.com/" rel="noopener" target="_blank">Tigerton</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert plus">Shopify Plus Partner</span>
           <div class="tags">
             <span class="tag">Shopify Plus</span><span class="tag">Headless</span><span class="tag">Enterprise</span>
           </div>
@@ -348,6 +361,7 @@
             <h3><a href="https://todas.se/shopify" rel="noopener" target="_blank">Todas</a></h3>
             <span class="city">Stockholm</span>
           </div>
+          <span class="cert standard">Shopify Partner</span>
           <div class="tags">
             <span class="tag">Shopify</span><span class="tag">SMB</span><span class="tag">Förvaltning</span>
           </div>
@@ -360,6 +374,7 @@
             <h3><a href="https://wearecube.se/" rel="noopener" target="_blank">We Are Cube</a></h3>
             <span class="city">Stockholm / Malmö</span>
           </div>
+          <span class="cert plus">Shopify Plus Partner</span>
           <div class="tags">
             <span class="tag">Shopify Plus</span><span class="tag">Design</span><span class="tag">Fashion</span>
           </div>
@@ -372,6 +387,7 @@
             <h3><a href="https://www.avensia.com/" rel="noopener" target="_blank">Avensia</a></h3>
             <span class="city">Lund / Stockholm</span>
           </div>
+          <span class="cert standard">Multi-platform partner</span>
           <div class="tags">
             <span class="tag">Enterprise</span><span class="tag">Composable</span><span class="tag">Multi-platform</span>
           </div>
@@ -391,6 +407,7 @@
           <tr>
             <th>Byrå</th>
             <th>Plats</th>
+            <th>Shopify-certifiering</th>
             <th>Primärt fokus</th>
             <th>Plus</th>
             <th>B2B</th>
@@ -398,20 +415,21 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td><a href="https://carismar.com/" rel="noopener" target="_blank">Carismar</a></td><td>Stockholm</td><td>D2C / Lifestyle</td><td class="center">✓</td><td class="center">—</td><td class="center">Lätt</td></tr>
-          <tr><td><a href="https://co-op.se/" rel="noopener" target="_blank">CO-OP</a></td><td>Stockholm / Göteborg</td><td>Migrering / Enterprise</td><td class="center">✓</td><td class="center">✓</td><td class="center">Standard</td></tr>
-          <tr><td><a href="https://dahlquist.se/shopify-sverige" rel="noopener" target="_blank">Dahlquist</a></td><td>Uddevalla / Falkenberg</td><td>B2B / ERP-integration</td><td class="center">✓</td><td class="center">✓</td><td class="center">Djup</td></tr>
-          <tr><td><a href="https://www.growlyab.se/" rel="noopener" target="_blank">Growly</a></td><td>Stockholm</td><td>CRO / Tillväxt</td><td class="center">—</td><td class="center">—</td><td class="center">Nej</td></tr>
-          <tr><td><a href="https://www.iggy.agency/" rel="noopener" target="_blank">Iggy Agency</a></td><td>Stockholm</td><td>SMB / CRO</td><td class="center">—</td><td class="center">—</td><td class="center">Nej</td></tr>
-          <tr><td><a href="https://www.polarcape.com/" rel="noopener" target="_blank">Polarcape</a></td><td>Stockholm</td><td>Enterprise / Headless</td><td class="center">✓</td><td class="center">✓</td><td class="center">Djup</td></tr>
-          <tr><td><a href="https://www.stride.se/" rel="noopener" target="_blank">Stride</a></td><td>Stockholm</td><td>Migrering / B2B</td><td class="center">✓</td><td class="center">✓</td><td class="center">Standard</td></tr>
-          <tr><td><a href="https://www.swivrr.se/" rel="noopener" target="_blank">Swivrr</a></td><td>Online</td><td>SMB / Setup</td><td class="center">—</td><td class="center">—</td><td class="center">Nej</td></tr>
-          <tr><td><a href="https://tigerton.com/" rel="noopener" target="_blank">Tigerton</a></td><td>Stockholm</td><td>Headless / Enterprise</td><td class="center">✓</td><td class="center">✓</td><td class="center">Standard</td></tr>
-          <tr><td><a href="https://todas.se/shopify" rel="noopener" target="_blank">Todas</a></td><td>Stockholm</td><td>SMB / Förvaltning</td><td class="center">—</td><td class="center">—</td><td class="center">Lätt</td></tr>
-          <tr><td><a href="https://wearecube.se/" rel="noopener" target="_blank">We Are Cube</a></td><td>Stockholm / Malmö</td><td>Design / Fashion</td><td class="center">✓</td><td class="center">—</td><td class="center">Lätt</td></tr>
-          <tr><td><a href="https://www.avensia.com/" rel="noopener" target="_blank">Avensia</a></td><td>Lund / Stockholm</td><td>Enterprise / Multi-platform</td><td class="center">✓</td><td class="center">✓</td><td class="center">Djup</td></tr>
+          <tr><td><a href="https://carismar.com/" rel="noopener" target="_blank">Carismar</a></td><td>Stockholm</td><td>Shopify Partner</td><td>D2C / Lifestyle</td><td class="center">✓</td><td class="center">—</td><td class="center">Lätt</td></tr>
+          <tr><td><a href="https://co-op.se/" rel="noopener" target="_blank">CO-OP</a></td><td>Stockholm / Göteborg</td><td><strong>Shopify Plus Partner</strong></td><td>Migrering / Enterprise / B2B+B2C</td><td class="center">✓</td><td class="center">✓</td><td class="center">Standard</td></tr>
+          <tr><td><a href="https://dahlquist.se/shopify-sverige" rel="noopener" target="_blank">Dahlquist</a></td><td>Uddevalla / Falkenberg</td><td><strong>Shopify Selected Partner</strong> (sedan 2016)</td><td>B2B / ERP / Enterprise</td><td class="center">✓</td><td class="center">✓</td><td class="center">Djup</td></tr>
+          <tr><td><a href="https://www.growlyab.se/" rel="noopener" target="_blank">Growly</a></td><td>Stockholm</td><td>Shopify Select Partner</td><td>CRO / Tillväxt</td><td class="center">—</td><td class="center">—</td><td class="center">Nej</td></tr>
+          <tr><td><a href="https://www.iggy.agency/" rel="noopener" target="_blank">Iggy Agency</a></td><td>Stockholm</td><td>Shopify Partner</td><td>SMB / CRO</td><td class="center">—</td><td class="center">—</td><td class="center">Nej</td></tr>
+          <tr><td><a href="https://www.polarcape.com/" rel="noopener" target="_blank">Polarcape</a></td><td>Stockholm</td><td>Shopify Plus Partner</td><td>Enterprise / Headless</td><td class="center">✓</td><td class="center">✓</td><td class="center">Djup</td></tr>
+          <tr><td><a href="https://www.stride.se/" rel="noopener" target="_blank">Stride</a></td><td>Stockholm</td><td>Shopify Select Partner</td><td>Migrering / B2B</td><td class="center">✓</td><td class="center">✓</td><td class="center">Standard</td></tr>
+          <tr><td><a href="https://www.swivrr.se/" rel="noopener" target="_blank">Swivrr</a></td><td>Online</td><td>Shopify Partner</td><td>SMB / Setup</td><td class="center">—</td><td class="center">—</td><td class="center">Nej</td></tr>
+          <tr><td><a href="https://tigerton.com/" rel="noopener" target="_blank">Tigerton</a></td><td>Stockholm</td><td>Shopify Plus Partner</td><td>Headless / Enterprise</td><td class="center">✓</td><td class="center">✓</td><td class="center">Standard</td></tr>
+          <tr><td><a href="https://todas.se/shopify" rel="noopener" target="_blank">Todas</a></td><td>Stockholm</td><td>Shopify Partner</td><td>SMB / Förvaltning</td><td class="center">—</td><td class="center">—</td><td class="center">Lätt</td></tr>
+          <tr><td><a href="https://wearecube.se/" rel="noopener" target="_blank">We Are Cube</a></td><td>Stockholm / Malmö</td><td>Shopify Plus Partner</td><td>Design / Fashion</td><td class="center">✓</td><td class="center">—</td><td class="center">Lätt</td></tr>
+          <tr><td><a href="https://www.avensia.com/" rel="noopener" target="_blank">Avensia</a></td><td>Lund / Stockholm</td><td>Multi-platform partner</td><td>Enterprise / Multi-platform</td><td class="center">✓</td><td class="center">✓</td><td class="center">Djup</td></tr>
         </tbody>
       </table>
+      <p style="font-size:.82rem;color:#6b7280;margin-top:12px;font-style:italic">Shopify-certifieringar enligt vad respektive byrå själv publicerar på sin webbplats per maj 2026. Verifiera aktuell status på <a href="https://www.shopify.com/partners/directory" rel="noopener" target="_blank">Shopify Partner Directory</a>. Tiers (lägsta → högsta): Shopify Partner → Shopify Select Partner → Shopify Plus Partner → Shopify Selected Partner.</p>
       </div>
     </section>
 
@@ -425,28 +443,28 @@
         </article>
         <article class="card">
           <h3>Etablerad D2C (5–30 MSEK)</h3>
-          <p class="desc">Här lönar det sig att börja titta på Shopify Plus och CRO-fokus. En byrå som kan kombinera bygge, performance marketing och löpande optimering ger bäst ROI.</p>
-          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> Carismar, Growly, We Are Cube</p>
+          <p class="desc">Här lönar det sig att börja titta på Shopify Plus och CRO-fokus. En byrå som kan kombinera bygge, performance marketing och löpande optimering ger bäst ROI. Plus-partners med D2C-erfarenhet är prioritet.</p>
+          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> Carismar, CO-OP Agency, Growly, We Are Cube</p>
         </article>
         <article class="card">
           <h3>B2B / industri / återförsäljare</h3>
-          <p class="desc">Du behöver djup ERP-integration (Fortnox, Visma, Business Central) och Shopify B2B-modulen. Välj en byrå med dedikerade systemutvecklare — inte bara tema-byggare.</p>
-          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> Dahlquist, Polarcape, Stride</p>
+          <p class="desc">Du behöver djup ERP-integration (Fortnox, Visma, Business Central) och Shopify B2B-modulen. Välj en byrå med dedikerade systemutvecklare — inte bara tema-byggare. Selected/Plus Partner-status är viktigt här.</p>
+          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> CO-OP Agency, Dahlquist, Polarcape, Stride</p>
         </article>
         <article class="card">
           <h3>Enterprise / multi-market (&gt; 50 MSEK)</h3>
-          <p class="desc">Här blir Shopify Plus med headless eller composable approach relevant. Multi-market via Shopify Markets, custom checkout via Checkout Extensibility, automation via Flow.</p>
-          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> Avensia, CO-OP Agency, Tigerton</p>
+          <p class="desc">Här blir Shopify Plus med headless eller composable approach relevant. Multi-market via Shopify Markets, custom checkout via Checkout Extensibility, automation via Flow. ERP-integrationskompetens är ofta avgörande.</p>
+          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> Avensia, CO-OP Agency, Dahlquist, Polarcape, Tigerton</p>
         </article>
         <article class="card">
           <h3>Migrering från annan plattform</h3>
-          <p class="desc">Magento, WooCommerce, Wikinggruppen, Norce eller Jetshop till Shopify. Du behöver en byrå med dokumenterat metodik för datamigrering och SEO-bevarande.</p>
+          <p class="desc">Magento, WooCommerce, Wikinggruppen, Norce eller Jetshop till Shopify. Du behöver en byrå med dokumenterat metodik för datamigrering och SEO-bevarande — och certifierad partner-status med Shopify.</p>
           <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> CO-OP Agency, Dahlquist, Stride</p>
         </article>
         <article class="card">
           <h3>Pågående förvaltning / månadsservice</h3>
-          <p class="desc">Om butiken redan är byggd och du söker en partner för löpande optimering, säkerhetspatcher och CRO. SLA och dedikerad kontaktperson är avgörande.</p>
-          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> Dahlquist, Growly, Todas</p>
+          <p class="desc">Om butiken redan är byggd och du söker en partner för löpande optimering, säkerhetspatcher och CRO. SLA och dedikerad kontaktperson är avgörande, liksom långsiktig erfarenhet av plattformen.</p>
+          <p style="font-size:.9rem;color:#0057b8"><strong>Kandidater:</strong> CO-OP Agency, Dahlquist, Growly, Todas</p>
         </article>
       </div>
     </section>
