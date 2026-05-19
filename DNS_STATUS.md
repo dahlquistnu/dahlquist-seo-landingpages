@@ -1,7 +1,9 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-05-19 03:20 UTC
+Senast kontrollerad: 2026-05-19 05:04 UTC
 
 **27/32 live på Vercel**
+
+> ⚠️ DNS-uppslag blockerades i exekveringsmiljön vid senaste körning (05:04 UTC). Statusen nedan är baserad på föregående lyckade kontroll (03:20 UTC). Verifiera de 5 kvarvarande domänerna manuellt med `dig <domain> +short`.
 
 ## Väntar (5 st):
   - aiutveckling.com (212.123.41.108)
