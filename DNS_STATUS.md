@@ -1,7 +1,8 @@
 # DNS Propagation Status
 Senast kontrollerad: 2026-05-20 06:30 UTC
+Kontroll försöktes: 2026-05-20 07:00 UTC (misslyckades – DNS-verktyg saknas i exekveringsmiljön)
 
-**27/32 live på Vercel**
+**27/32 live på Vercel** *(senast verifierade status)*
 
 ## Väntar (5 st):
   - aiutveckling.com (212.123.41.108)
