@@ -1,8 +1,7 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-05-20 06:30 UTC
-Kontroll försöktes: 2026-05-20 07:00 UTC (misslyckades – DNS-verktyg saknas i exekveringsmiljön)
+Senast kontrollerad: 2026-05-20 18:02 UTC
 
-**27/32 live på Vercel** *(senast verifierade status)*
+**27/32 live på Vercel**
 
 ## Väntar (5 st):
   - aiutveckling.com (212.123.41.108)
@@ -12,30 +11,30 @@ Kontroll försöktes: 2026-05-20 07:00 UTC (misslyckades – DNS-verktyg saknas 
   - b2b-today.com (212.123.41.108)
 
 ## Live (27 st):
-  - shopifysverige.com
-  - xn--shopifybyr-b6a.se
-  - xn--shopifybyrer-2cb.se
-  - shopify360.se
-  - magentopwa.se
-  - aiengineer.se
-  - adobe-commerce.se
-  - x-konsult.se
-  - starta-ehandel.se
-  - shopifyseo.se
-  - shopifypro.se
-  - shopifyexperts.se
-  - shopifyb2b.se
-  - shopify-sverige.se
-  - pimsystem.se
-  - magentocommerce.se
-  - inline-ehandel.se
-  - digitalhandel.nu
-  - e-handelsystem.se
-  - ai-utvecklare.se
-  - ecomeagency.se
-  - magento-webshop.se
-  - ehandelinstitutet.se
-  - magento-pwa.se
-  - magento-ehandel.se
-  - b2behandel.se
-  - centrumhandel.se
+  - shopifysverige.com (76.76.21.21)
+  - xn--shopifybyr-b6a.se (76.76.21.21)
+  - xn--shopifybyrer-2cb.se (76.76.21.21)
+  - shopify360.se (76.76.21.21)
+  - magentopwa.se (76.76.21.21)
+  - aiengineer.se (76.76.21.21)
+  - adobe-commerce.se (76.76.21.21)
+  - x-konsult.se (76.76.21.21)
+  - starta-ehandel.se (76.76.21.21)
+  - shopifyseo.se (76.76.21.21)
+  - shopifypro.se (76.76.21.21)
+  - shopifyexperts.se (76.76.21.21)
+  - shopifyb2b.se (76.76.21.21)
+  - shopify-sverige.se (76.76.21.21)
+  - pimsystem.se (76.76.21.21)
+  - magentocommerce.se (76.76.21.21)
+  - inline-ehandel.se (76.76.21.21)
+  - digitalhandel.nu (76.76.21.21)
+  - e-handelsystem.se (76.76.21.21)
+  - ai-utvecklare.se (76.76.21.21)
+  - ecomeagency.se (76.76.21.21)
+  - magento-webshop.se (76.76.21.21)
+  - ehandelinstitutet.se (76.76.21.21)
+  - magento-pwa.se (76.76.21.21)
+  - magento-ehandel.se (76.76.21.21)
+  - b2behandel.se (76.76.21.21)
+  - centrumhandel.se (76.76.21.21)
