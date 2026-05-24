@@ -1,10 +1,7 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-05-24 09:00 UTC
+Senast kontrollerad: 2026-05-24 09:27 UTC
 
 **27/32 live på Vercel**
-
-> OBS: DNS-kontroll från remote container är ej möjlig (nätverkspolicyn blockerar extern DNS-trafik).
-> Status baserad på senast lyckade kontroll kl 06:23 UTC.
 
 ## Väntar (5 st):
   - aiutveckling.com (212.123.41.108)
