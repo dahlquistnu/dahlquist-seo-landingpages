@@ -1,5 +1,5 @@
 # Loopia .com NS-låsning - status
-Senast kontrollerad: 2026-05-16 08:00 UTC
+Senast kontrollerad: 2026-05-30 08:05 UTC
 
 ## Mail-svar från Loopia/Ascio
 
@@ -11,8 +11,8 @@ Senast kontrollerad: 2026-05-16 08:00 UTC
 **Inget nytt svar från Loopia/Ascio sedan 2026-05-09.**
 
 **Action items för Niklas:**
-1. **Eskalera ärende #146646** — 48h-fristen (räknat från 2026-05-09) har passerats. Svara på ärendet och kräv manuell Ascio→Verisign EPP-åtgärd. Loopias råd att "spara om" har inte löst problemet.
-2. **Hänvisa till Vercel-notisen** (2026-05-13): Vercel bekräftar att alla 5 domäner fortfarande är felkonfigurerade (DNS pekar inte på Vercel).
+1. **Eskalera ärende #146646** — 48h-fristen (räknat från 2026-05-09) har länge passerats (>20 dagar). Svara på ärendet och kräv manuell Ascio→Verisign EPP-åtgärd. Loopias råd att "spara om" har inte löst problemet.
+2. **Hänvisa till Vercel-notiserna** (2026-05-13 och 2026-05-30): Vercel bekräftar upprepade gånger att alla 5 domäner fortfarande är felkonfigurerade.
 
 > OBS: Niklas är sjuk (auto-svar aktivt). Kontakta fredrik@dahlquist.se eller mattias@dahlquist.se vid akuta ärenden.
 
@@ -20,7 +20,8 @@ Senast kontrollerad: 2026-05-16 08:00 UTC
 
 | Datum | Avsändare | Innehåll |
 |-------|-----------|----------|
-| 2026-05-13 02:39 UTC | notifications@vercel.com | **Vercel-varning:** "5 domains need configuration on team 'Dahlquist Vercel'" — alla 5 domäner (aiutveckling.com, aiutvecklare.com, wunderwerk-b2b.com, orionheadless.com, b2b-today.com) flaggas som felkonfigurerade i Vercel-dashboarden. Bekräftar att DNS-låsningen fortfarande är aktiv. |
+| 2026-05-13 02:39 UTC | notifications@vercel.com | **Vercel-varning:** "5 domains need configuration on team 'Dahlquist Vercel'" — alla 5 domäner flaggas som felkonfigurerade. |
+| 2026-05-30 05:17 UTC | notifications@vercel.com | **Ny Vercel-varning:** "5 domains need configuration on team 'Dahlquist Vercel'" — alla 5 domäner (aiutveckling.com, aiutvecklare.com, wunderwerk-b2b.com, orionheadless.com, b2b-today.com) fortfarande felkonfigurerade. Bekräftar att NS-låsningen är aktiv >21 dagar efter anmälan. |
 
 ## DNS-status per domän
 
@@ -36,8 +37,8 @@ Senast kontrollerad: 2026-05-16 08:00 UTC
 
 **Förväntad status när löst:** A-record = 76.76.21.21, HTTP = 200
 
-## Förändring sedan förra körningen (2026-05-10)
+## Förändring sedan förra körningen (2026-05-16)
 
-**NY INFO** — Vercel skickade 2026-05-13 en automatisk varning om att alla 5 domäner är felkonfigurerade i Vercel-dashboarden, vilket bekräftar att NS-låsningen fortfarande är aktiv. Inget nytt svar från Loopia/Ascio. DNS-status oförändrat låst (alla 5 → 212.123.41.108, HTTP 403).
+**NY VERCEL-VARNING** — Vercel skickade 2026-05-30 05:17 UTC en ny automatisk varning om att alla 5 domäner fortfarande är felkonfigurerade. Ingen ny kontakt från Loopia/Ascio sedan 2026-05-09. DNS oförändrat låst (alla 5 → 212.123.41.108, HTTP 403). Ärendet har nu pågått i >21 dagar utan lösning.
 
-**Rekommenderad åtgärd:** 48h-fristen har löpt ut — eskalera ärende #146646 och begär manuell EPP-korrigering från Ascio.
+**Rekommenderad åtgärd:** Eskalera omedelbart ärende #146646 och begär manuell EPP-korrigering från Ascio.
