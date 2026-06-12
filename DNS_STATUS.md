@@ -1,5 +1,5 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-06-12 09:30 UTC
+Senast kontrollerad: 2026-06-12 10:00 UTC
 
 **27/32 live på Vercel**
 
@@ -11,4 +11,30 @@ Senast kontrollerad: 2026-06-12 09:30 UTC
   - b2b-today.com (212.123.41.108)
 
 ## Live (27 st):
-shopifysverige.com xn--shopifybyr-b6a.se xn--shopifybyrer-2cb.se shopify360.se magentopwa.se aiengineer.se adobe-commerce.se x-konsult.se starta-ehandel.se shopifyseo.se shopifypro.se shopifyexperts.se shopifyb2b.se shopify-sverige.se pimsystem.se magentocommerce.se inline-ehandel.se digitalhandel.nu e-handelsystem.se ai-utvecklare.se ecomeagency.se magento-webshop.se ehandelinstitutet.se magento-pwa.se magento-ehandel.se b2behandel.se centrumhandel.se
+  - shopifysverige.com
+  - xn--shopifybyr-b6a.se
+  - xn--shopifybyrer-2cb.se
+  - shopify360.se
+  - magentopwa.se
+  - aiengineer.se
+  - adobe-commerce.se
+  - x-konsult.se
+  - starta-ehandel.se
+  - shopifyseo.se
+  - shopifypro.se
+  - shopifyexperts.se
+  - shopifyb2b.se
+  - shopify-sverige.se
+  - pimsystem.se
+  - magentocommerce.se
+  - inline-ehandel.se
+  - digitalhandel.nu
+  - e-handelsystem.se
+  - ai-utvecklare.se
+  - ecomeagency.se
+  - magento-webshop.se
+  - ehandelinstitutet.se
+  - magento-pwa.se
+  - magento-ehandel.se
+  - b2behandel.se
+  - centrumhandel.se
