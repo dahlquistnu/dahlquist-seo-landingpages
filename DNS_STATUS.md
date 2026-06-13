@@ -1,5 +1,5 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-06-13 14:06 UTC
+Senast kontrollerad: 2026-06-13 14:18 UTC
 
 **27/32 live på Vercel**
 
