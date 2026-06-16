@@ -3,6 +3,8 @@ Senast kontrollerad: 2026-06-16 09:05 UTC
 
 **27/32 live på Vercel**
 
+> ⚠️ Kontroll 2026-06-16 10:00 UTC misslyckades: nätverksegress blockerad i körmiljön (ingen DNS-åtkomst tillgänglig). Status nedan är från föregående körning.
+
 ## Väntar (5 st):
 
   - aiutveckling.com (212.123.41.108)
