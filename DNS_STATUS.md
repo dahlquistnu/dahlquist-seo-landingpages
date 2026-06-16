@@ -1,12 +1,9 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-06-16 12:00 UTC
+Senast kontrollerad: 2026-06-16 05:48 UTC
 
 **27/32 live på Vercel**
 
-> ⚠️ Kontroll 2026-06-16 12:00 UTC misslyckades: nätverksegress blockerad i körmiljön (varken dig eller DNS-over-HTTPS tillgänglig). Status nedan är från senaste lyckade körning (2026-06-16 09:05 UTC).
-
 ## Väntar (5 st):
-
   - aiutveckling.com (212.123.41.108)
   - aiutvecklare.com (212.123.41.108)
   - wunderwerk-b2b.com (212.123.41.108)
