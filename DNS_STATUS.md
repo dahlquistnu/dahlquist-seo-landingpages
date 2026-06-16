@@ -1,9 +1,9 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-06-16 09:05 UTC
+Senast kontrollerad: 2026-06-16 12:00 UTC
 
 **27/32 live på Vercel**
 
-> ⚠️ Kontroll 2026-06-16 10:00 UTC misslyckades: nätverksegress blockerad i körmiljön (ingen DNS-åtkomst tillgänglig). Status nedan är från föregående körning.
+> ⚠️ Kontroll 2026-06-16 12:00 UTC misslyckades: nätverksegress blockerad i körmiljön (varken dig eller DNS-over-HTTPS tillgänglig). Status nedan är från senaste lyckade körning (2026-06-16 09:05 UTC).
 
 ## Väntar (5 st):
 
