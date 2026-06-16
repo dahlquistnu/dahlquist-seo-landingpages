@@ -1,7 +1,5 @@
 # DNS Propagation Status
-Senast kontrollerad: 2026-06-16 16:50 UTC
-
-> ⚠️ **OBS – 2026-06-16 automatisk körning:** DNS-lookups kunde inte utföras från container (nätverksegress begränsad). Nedanstående data är från föregående manuella körning kl. 16:50 UTC.
+Senast kontrollerad: 2026-06-16 17:09 UTC
 
 **27/32 live på Vercel**
 
